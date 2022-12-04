@@ -67,6 +67,18 @@ build CMakeFiles/final_project.dir/ActorActressDb.cpp.o: CXX_COMPILER__final_pro
   OBJECT_DIR = CMakeFiles/final_project.dir
   OBJECT_FILE_DIR = CMakeFiles/final_project.dir
 
+build CMakeFiles/final_project.dir/Picture.cpp.o: CXX_COMPILER__final_project_Debug /Users/allissahertz/CLionProjects/final-project/Picture.cpp || cmake_object_order_depends_target_final_project
+  DEP_FILE = CMakeFiles/final_project.dir/Picture.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/final_project.dir
+  OBJECT_FILE_DIR = CMakeFiles/final_project.dir
+
+build CMakeFiles/final_project.dir/PictureDb.cpp.o: CXX_COMPILER__final_project_Debug /Users/allissahertz/CLionProjects/final-project/PictureDb.cpp || cmake_object_order_depends_target_final_project
+  DEP_FILE = CMakeFiles/final_project.dir/PictureDb.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/final_project.dir
+  OBJECT_FILE_DIR = CMakeFiles/final_project.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target final_project
@@ -75,7 +87,7 @@ build CMakeFiles/final_project.dir/ActorActressDb.cpp.o: CXX_COMPILER__final_pro
 #############################################
 # Link the executable final_project
 
-build final_project: CXX_EXECUTABLE_LINKER__final_project_Debug CMakeFiles/final_project.dir/main.cpp.o CMakeFiles/final_project.dir/ActorActress.cpp.o CMakeFiles/final_project.dir/ActorActressDb.cpp.o
+build final_project: CXX_EXECUTABLE_LINKER__final_project_Debug CMakeFiles/final_project.dir/main.cpp.o CMakeFiles/final_project.dir/ActorActress.cpp.o CMakeFiles/final_project.dir/ActorActressDb.cpp.o CMakeFiles/final_project.dir/Picture.cpp.o CMakeFiles/final_project.dir/PictureDb.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/final_project.dir
   POST_BUILD = :

@@ -1,4 +1,3 @@
-/*
 //
 // Created by Allissa Hertz on 12/3/22.
 //
@@ -7,14 +6,13 @@
 #define FINAL_PROJECT_PICTUREDB_H
 
 #include "main.h"
-#include "main.cpp"
 
-vector<Picture> loadFromFilePictureData()
+vector<Picture> loadFromFilePictureData();
 void addPictureRecord();
 void printPictureDb();
 void sortPicture();
 void searchPicture();
-void printCSVPicture();
+void saveCSVPicture();
 
 #endif //FINAL_PROJECT_PICTUREDB_H
-*/
+

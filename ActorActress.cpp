@@ -5,6 +5,10 @@
 #include "ActorActress.h"
 using namespace std;
 
+ //Contructor functionality
+ActorActress::ActorActress()
+{
+}
 ActorActress::ActorActress(int yr, string aw, bool win, string n, string f)
 {
 }

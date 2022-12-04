@@ -2,9 +2,9 @@
 // Created by Allissa Hertz on 12/3/22.
 //
 
-#include "ActorActressDb.h"
+#include "main.h"
 
-static vector<ActorActress> loadFromFileActorActressData() {
+vector<ActorActress> loadFromFileActorActressData() {
     int year = 0;
     string award;
     bool winner = true;
@@ -51,7 +51,7 @@ static vector<ActorActress> loadFromFileActorActressData() {
                 actorActress.setFilm(temp_actor_actress_record[4]);
                 //Add all of the objects to a vector
                 new_actor_actress_vector.push_back(actorActress);
-                cout << actorActress.print() << endl;
+//                cout << actorActress.print() << endl;
             }
             i++;
         }

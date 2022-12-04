@@ -1,9 +1,9 @@
-/*
+
 //
 // Created by Allissa Hertz on 12/3/22.
 //
 
-#include "PictureDb.h"
+#include "main.h"
 
 vector<Picture> loadFromFilePictureData() {
     string name;
@@ -13,7 +13,7 @@ vector<Picture> loadFromFilePictureData() {
     int duration = 0;
     string genre1;
     string genre2;
-    int release = 0;
+    string release = 0;
     int metacritic = 0;
     string synopsis;
 
@@ -32,25 +32,26 @@ vector<Picture> loadFromFilePictureData() {
                 vector<string> temp_picture_record = splitString(line, ',');
                 Picture picture(name, year, nominations, rating, duration, genre1, genre2, release, metacritic,synopsis);
                 picture.setName(temp_picture_record[0]);
-                if (temp_picture_record[1] == ""){
+                if (temp_picture_record[1] == "" || temp_picture_record[1] == "-"){
                     picture.setYear(-1);
                 }
                 else {
                     picture.setYear(stoi(temp_picture_record[1]));
+                    cout << picture.getYear() << endl;
                 }
-                if (temp_picture_record[2] == ""){
+                if (temp_picture_record[2] == "" || temp_picture_record[2] == "-"){
                     picture.setNominations(-1);
                 }
                 else {
                     picture.setNominations(stoi(temp_picture_record[2]));
                 }
-                if (temp_picture_record[3] == ""){
+                if (temp_picture_record[3] == "" || temp_picture_record[3] == "-"){
                     picture.setRating(-1);
                 }
                 else {
-                    picture.setRating(stoi(temp_picture_record[3]));
+                    picture.setRating(stod(temp_picture_record[3]));
                 }
-                if (temp_picture_record[4] == ""){
+                if (temp_picture_record[4] == "" || temp_picture_record[4] == "-"){
                     picture.setDuration(-1);
                 }
                 else {
@@ -58,13 +59,9 @@ vector<Picture> loadFromFilePictureData() {
                 }
                 picture.setGenre1(temp_picture_record[5]);
                 picture.setGenre2(temp_picture_record[6]);
-                if (temp_picture_record[7] == ""){
-                    picture.setRelease(-1);
-                }
-                else {
-                    picture.setRelease(stoi(temp_picture_record[7]));
-                }
-                if (temp_picture_record[8] == ""){
+                picture.setRelease(temp_picture_record[7]);
+
+                if (temp_picture_record[8] == "" || temp_picture_record[8] == "-"){
                     picture.setMetacritic(-1);
                 }
                 else {
@@ -72,7 +69,7 @@ vector<Picture> loadFromFilePictureData() {
                 }
                 picture.setSynopsis(temp_picture_record[9]);
                 new_picture_vector.push_back(picture);
-                cout << picture.print() << endl;
+                cout << picture.getName() << endl;
             }
             i++;
         }
@@ -89,7 +86,7 @@ void addPictureRecord() {
     int input_duration;
     string input_genre1;
     string input_genre2;
-    int input_release;
+    string input_release;
     int input_metacrtic;
     string input_synopsis;
 
@@ -146,6 +143,6 @@ void searchPicture(){
     cout << "What would you like to search for?";
 }
 
-void printCSVPicture() {
+void saveCSVPicture() {
 
-}*/
+}

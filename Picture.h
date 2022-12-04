@@ -1,4 +1,3 @@
-/*
 //
 // Created by Allissa Hertz on 11/26/22.
 //
@@ -13,7 +12,7 @@ public:
 
     Picture();
 
-    Picture(string n, int yr, int nom, double rate, int dur, string gen1, string gen2, int rel, int mc, string syn);
+    Picture(string n, int yr, int nom, double rate, int dur, string gen1, string gen2, string rel, int mc, string syn);
 
     //Picture public variables
     string name;
@@ -23,7 +22,7 @@ public:
     int duration;
     string genre1;
     string genre2;
-    int release;
+    string release;
     int metacritic;
     string synopsis;
 
@@ -35,7 +34,7 @@ public:
     int getDuration() const;
     string getGenre1() const;
     string getGenre2() const;
-    int getRelease() const;
+    string getRelease() const;
     int getMetacritic() const;
     string getSynopsis() const;
     
@@ -47,7 +46,7 @@ public:
     void setDuration(int du);
     void setGenre1(string one);
     void setGenre2(string two);
-    void setRelease(int re);
+    void setRelease(string re);
     void setMetacritic(int me);
     void setSynopsis(string sy);
     string print() const;
@@ -55,4 +54,4 @@ public:
 
 
 #endif //FINAL_PROJECT_PICTURE_H
-*/
+

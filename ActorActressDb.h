@@ -4,16 +4,13 @@
 
 #ifndef FINAL_PROJECT_ACTORACTRESSDB_H
 #define FINAL_PROJECT_ACTORACTRESSDB_H
-
 #include "main.h"
-#include "main.cpp"
 
-static vector<ActorActress> loadFromFileActorActressData();
+vector<ActorActress> loadFromFileActorActressData();
 void addActorActressRecord();
 void printActorActressDb();
 void sortActorActress();
 void searchActorActress();
 void saveCSVActorActress();
-
 
 #endif //FINAL_PROJECT_ACTORACTRESSDB_H

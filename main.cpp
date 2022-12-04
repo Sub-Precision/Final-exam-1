@@ -12,7 +12,7 @@ int main() {
     //It opens the file, and uses the splitString() utility function to read in
     //The lines and assign each item to the appropriate member variables for the Picture object
     //The vector returned is globally defined in main.h so it can be used in other functions
-    //picture_db = loadFromFilePictureData();
+    picture_db = loadFromFilePictureData();
     //Ask the user which db they want to use
     cout << "Hello, Welcome to the Academy Award Database!\n\nPlease choose the database you would like to view:\n1. Actor/Actress \n2. Movie\n" << std::endl;
     //store value
@@ -26,7 +26,7 @@ int main() {
     //if they type anything else, they get an error message and go back to the main menu
     } else {
         cout << R"(You must enter either "1" or "2".)";
-        main();
+//        main();
     }
     return 0;
 }
@@ -48,7 +48,7 @@ void mainMenu(bool isActorDatabase) {
                     addActorActressRecord();
                 } else {
                     //Defined in PictureDb.cpp
-                   // addPictureRecord();
+                    addPictureRecord();
                 }
                 break;
             case 2 :
@@ -58,7 +58,7 @@ void mainMenu(bool isActorDatabase) {
                     sortActorActress();
                 } else {
                     //Defined in PictureDb.cpp
-                   // sortPicture();
+                    sortPicture();
                 }
                 break;
             case 3 :
@@ -68,7 +68,7 @@ void mainMenu(bool isActorDatabase) {
                     searchActorActress();
                 } else {
                     //Defined in PictureDb.cpp
-                   // searchPicture();
+                    searchPicture();
                 }
                 break;
             case 4 :
@@ -78,7 +78,7 @@ void mainMenu(bool isActorDatabase) {
                     saveCSVActorActress();
                 } else {
                     //Defined in PictureDb.cpp
-                  //  printCSVPicture();
+                    saveCSVPicture();
                 }
                 break;
             case 0 :
