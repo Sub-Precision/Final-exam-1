@@ -13,7 +13,7 @@ vector<Picture> loadFromFilePictureData() {
     int duration = 0;
     string genre1;
     string genre2;
-    string release = 0;
+    string release;
     int metacritic = 0;
     string synopsis;
 
@@ -37,7 +37,6 @@ vector<Picture> loadFromFilePictureData() {
                 }
                 else {
                     picture.setYear(stoi(temp_picture_record[1]));
-                    cout << picture.getYear() << endl;
                 }
                 if (temp_picture_record[2] == "" || temp_picture_record[2] == "-"){
                     picture.setNominations(-1);
@@ -69,7 +68,7 @@ vector<Picture> loadFromFilePictureData() {
                 }
                 picture.setSynopsis(temp_picture_record[9]);
                 new_picture_vector.push_back(picture);
-                cout << picture.getName() << endl;
+//                cout << picture.print() << endl;
             }
             i++;
         }

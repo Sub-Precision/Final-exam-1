@@ -47,18 +47,18 @@ void ActorActress::setFilm(string f) {
     film = f;
 }
 
-string ActorActress::print() const {
-    string returnString;
-    if (this->getYear() == -1){
-        returnString += ",";
-    } else {
-        returnString += to_string(this->getYear()) + ",";
-    }
-    returnString +=this->getAward()+",";
-    if (this->getWinner())
-        returnString += "yes,";
-    else
-        returnString += "no,";
-    returnString += this->getName()+","+this->getFilm();
-    return returnString;
-}
+//string ActorActress::print() const {
+//    string returnString;
+//    if (this->getYear() == -1){
+//        returnString += ",";
+//    } else {
+//        returnString += to_string(this->getYear()) + ",";
+//    }
+//    returnString +=this->getAward()+",";
+//    if (this->getWinner())
+//        returnString += "yes,";
+//    else
+//        returnString += "no,";
+//    returnString += this->getName()+","+this->getFilm();
+//    return returnString;
+//}

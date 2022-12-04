@@ -96,12 +96,12 @@ void addActorActressRecord() {
     actorActress.setFilm(input_film);
 
     actor_actress_db.push_back(actorActress);
-    cout << "Added entry to database: \n" << actorActress.print() << endl;
+//    cout << "Added entry to database: \n" << actorActress.print() << endl;
 }
 
 void printActorActressDb() {
     for (int i = 0; i < actor_actress_db.size(); i++){
-        cout << actor_actress_db[i].print() << endl;
+//        cout << actor_actress_db[i].print() << endl;
     }
 }
 

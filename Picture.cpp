@@ -3,7 +3,7 @@
 //
 
 #include <string>
-#include "Picture.h"
+#include "main.h"
 using namespace std;
 
 Picture::Picture() {
@@ -96,6 +96,7 @@ string Picture::print() const {
     } else {
         returnString += to_string(this->getNominations()) + ",";
     }
+
     if (this->getRating() == -1){
         returnString += ",";
     } else {
@@ -106,6 +107,7 @@ string Picture::print() const {
     } else {
         returnString += to_string(this->getDuration()) + ",";
     }
+
     returnString +=this->getGenre1()+",";
     returnString +=this->getGenre2()+",";
     returnString +=this->getRelease()+",";
@@ -115,5 +117,6 @@ string Picture::print() const {
         returnString += to_string(this->getMetacritic()) + ",";
     }
     returnString +=this->getSynopsis()+",";
+    return returnString;
 }
 
