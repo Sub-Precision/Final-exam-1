@@ -4,6 +4,9 @@
 
 #ifndef FINAL_PROJECT_ACTORACTRESS_H
 #define FINAL_PROJECT_ACTORACTRESS_H
+
+#include <string>
+
 using namespace std;
 
 class ActorActress {
@@ -17,7 +20,7 @@ public:
 
     //constructors
     ActorActress();
-    AtcorActress(int, string, bool, string, string);
+    ActorActress(int yr, string aw, bool win, string n, string f);
     
     //Getters
     int getYear() const;
@@ -28,10 +31,11 @@ public:
     
     //Setters
     void setYear(int y);
-    void setAward(int a);
-    void setWinner(int w);
-    void setName(int n);
-    void setFilm(int f);
+    void setAward(string a);
+    void setWinner(bool w);
+    void setName(string n);
+    void setFilm(string f);
+    string print() const;
 };
 
 

@@ -3,4 +3,4 @@ project(final_project)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(final_project main.cpp)
+add_executable(final_project main.cpp ActorActress.cpp ActorActress.h BST.h Exceptions.h main.h ActorActressDb.cpp ActorActressDb.h)

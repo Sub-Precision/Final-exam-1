@@ -1,148 +1,117 @@
-#include <fstream>
-#include <iostream>
-#include "Picture.h"
-using namespace std;
-void mainMenu(bool isActorDatabase);
-void addPictureRecord();
-void addActorActressRecord();
-void sortActorActress();
-void sortPicture();
+# include "main.h"
 
+//The first menu that the user sees. They use this to choose which db they are interacting with
 int main() {
     int database_selection;
-    cout << "Hello, Welcome to the Academy Award Database!\n\nPlease choose the database you would like to view:\n1. Actor\n2. Movie\n" << std::endl;
-
+    //loadFromFileActorActressData() is defined in ActorActressDb.cpp
+    //It opens the file, and uses the splitString() utility function to read in
+    //The lines and assign each item to the appropriate member variables for the ActorActress object
+    //The vector returned is globally defined in main.h so it can be used in other functions
+    actor_actress_db = loadFromFileActorActressData();
+    //loadFromFilePictureData() is defined in PictureDb.cpp
+    //It opens the file, and uses the splitString() utility function to read in
+    //The lines and assign each item to the appropriate member variables for the Picture object
+    //The vector returned is globally defined in main.h so it can be used in other functions
+    //picture_db = loadFromFilePictureData();
+    //Ask the user which db they want to use
+    cout << "Hello, Welcome to the Academy Award Database!\n\nPlease choose the database you would like to view:\n1. Actor/Actress \n2. Movie\n" << std::endl;
+    //store value
     cin >> database_selection;
+    //if they type 1, it is the actor database
     if (database_selection == 1) {
         mainMenu(true);
+    //if they type 2, it is the picture database
     } else if (database_selection == 2) {
         mainMenu(false);
+    //if they type anything else, they get an error message and go back to the main menu
     } else {
-            cout << R"(You must enter either "actor/actress" or "movie".)";
+        cout << R"(You must enter either "1" or "2".)";
+        main();
     }
     return 0;
 }
 
+// They have selected which database they want, and now they select what they want to do
 void mainMenu(bool isActorDatabase) {
     int main_menu_selection;
-    cout << "What would you like to do? Enter a number 1-4 to select one of the options below. \n\nYou can:\n\n1. Add a new record\n2. Sort records alphabetically by a certain field\n3. Search for an entry by a field. This also allows you to modify or delete a particular field.\n4. Print a CSV file of the latest database.\n";
-    cin >> main_menu_selection;
-    switch(main_menu_selection) {
-        //Add a new record
-        case 1 :
-            if (isActorDatabase == true){
-                addActorActressRecord();
-            } else {
-                addPictureRecord();
-            }
-            break;
-        //Sort records alphabetically by a certain field
-        case 2 :
-            if (isActorDatabase == true){
-                sortActorActress();
-            } else {
-                sortPicture();
-            }
-        //Search for an entry by a field
-        case 3 :
-            cout << "Well done" << endl;
-            break;
-        //Print a CSV file of the latest database
-        case 4 :
-            cout << "You passed" << endl;
-            break;
-        default :
-            cout << "Invalid input. You must enter a number 1-4 to select the corresponding menu option." << endl;
+    while (true) {
+        //ask what they want to do. Have them enter 1-4. Or 0 to cancel.
+        cout<< "What would you like to do? Enter a number 1-4 to select one of the options below. \n\nYou can:\n\n1. Add a new record\n2. Sort records alphabetically by a certain field\n3. Search for an entry by a field. This also allows you to modify or delete a particular field.\n4. Print a CSV file of the latest database.\n0. Quit\n";
+        //read in their selection
+        cin >> main_menu_selection;
+        //run different operations for ActorActress database or picture database based on their selection.
+        switch (main_menu_selection) {
+            case 1 :
+                //Add a new record
+                if (isActorDatabase == true) {
+                    //Defined in ActorActressDb.cpp
+                    addActorActressRecord();
+                } else {
+                    //Defined in PictureDb.cpp
+                   // addPictureRecord();
+                }
+                break;
+            case 2 :
+                //Sort records alphabetically by a certain field
+                if (isActorDatabase == true) {
+                    //Defined in ActorActressDb.cpp
+                    sortActorActress();
+                } else {
+                    //Defined in PictureDb.cpp
+                   // sortPicture();
+                }
+                break;
+            case 3 :
+                //Search for an entry by a field
+                if (isActorDatabase == true) {
+                    //Defined in ActorActressDb.cpp
+                    searchActorActress();
+                } else {
+                    //Defined in PictureDb.cpp
+                   // searchPicture();
+                }
+                break;
+            case 4 :
+                //Print a CSV file of the latest database
+                if (isActorDatabase == true) {
+                    //Defined in ActorActressDb.cpp
+                    saveCSVActorActress();
+                } else {
+                    //Defined in PictureDb.cpp
+                  //  printCSVPicture();
+                }
+                break;
+            case 0 :
+                // Type 0 at the main menu to
+                exit(0);
+                break;
+            default :
+                cout << "Invalid input. You must enter a number 1-4 to select the corresponding menu option." << endl;
+        }
     }
 }
-
-void addActorActressRecord() {
-
-    int year;
-    string award;
-    bool winner;
-    string name;
-    string film;
-
-    cout << "What year was the award won? Enter a four-digit integer. For example, “1976”.\n";
-    cin >> year;
-    cout << "What was the name of the award?\n";
-    cin >> award;
-    cout << "Did the actor/actress win the award?\n";
-    cin >> winner;
-    cout << "What was the name of the actor/actress?\n";
-    cin >> name;
-    cout << "What was the name of the film the actor/actress starred in?\n";
-    cin >> film;
-
-    fstream actor_actress_file;
-    actor_actress_file.open("actor_actress.csv");
-    if(!actor_actress_file){
-        cerr<<"File not found\n";
-        exit(EXIT_FAILURE);
-    } else{
-        // TODO: Add logic to actually write the data to the file
+// utility function that takes a string and a delimiter (For example a comma, space, or end of line)
+vector<string> splitString(string input, char delim) {
+    vector<string> newVector;
+    //while you find the delimiter, and it is not the end of the line
+    //(this is used with the input file to find all the commas)
+    while (input.find(delim) != std::string::npos) {
+        //create a token string that is a substring based on the delimiter
+        string token = input.substr(0, input.find(delim));
+        //erase up to the first delimiter (so it doesn't keep finding the same delimiter)
+        input.erase(0, input.find(delim) + 1);
+        //add the token to a new vector
+        newVector.push_back(token);
+        //if it is the end of the line, find that token
+        if(input.find(delim) == std::string::npos){
+            //also push that to the vector
+            //(this is used with the input file to still add the last item even though there is not a comma at the end
+            newVector.push_back(input);
+        }
     }
-
-
+    return newVector;
 }
 
-void addPictureRecord() {
-
-    string name;
-    int year;
-    int nominations;
-    double rating;
-    int duration;
-    string genre1;
-    string genre2;
-    int release;
-    int metacrtic;
-    string synopsis;
-
-    cout << "What was the name of the film? ";
-    cin >> name;
-    cout << "What year was the award won? Enter a four-digit integer. For example, “1976”.";
-    cin >> year;
-    cout << "How many nominations did the film receive?";
-    cin >> nominations;
-    cout << "What was the rating of the film? Enter a two-digit decimal. For example, “1.4”.";
-    cin >> rating;
-    cout << "What was the duration of the film? Enter a whole number that represents the running time of the film in minutes. For example, “145”.";
-    cin >> duration;
-    cout << "What was the main genre of the film?";
-    cin >> genre1;
-    cout << "What was the secondary genre of the film?";
-    cin >> genre2;
-    cout << "What year was the film released? Enter a two-digit integer to represent the year. For example, “89”.";
-    cin >> release;
-    cout << "What was the metacritic review score?";
-    cin >> metacrtic;
-    cout << "Please enter a short synopsis of the film.";
-    cin >> synopsis;
-
-    fstream pictures_file;
-    pictures_file.open("pictures.csv");
-    if(!pictures_file){
-        cerr<<"File not found\n";
-        exit(EXIT_FAILURE);
-    } else{
-        // TODO: Add logic to actually write the data to the file
-    }
-}
-
-void sortActorActress(){
-    int fieldName;
-    cout << "What field would you like to sort by?/n/n1. Year/n2. Award/n3. Winner/n4.Name/n5.Film";
-    //TODO: Add in logic to actually sort the data
-
-};
-
-void sortPicture() {
-    int fieldName;
-    cout << "What field would you like to sort by?/n/n1. Name/n2. Year/n3. Nominations/n4.Rating/n5.Duration/n6.Genre/n7.Secondary Genre/n8.Release/n9.Metacritic/n10.Synopisis/n";
-    //TODO: Add in logic to actually sort the data
-}
 
 
 

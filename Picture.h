@@ -1,3 +1,4 @@
+/*
 //
 // Created by Allissa Hertz on 11/26/22.
 //
@@ -9,7 +10,12 @@ using namespace std;
 
 class Picture {
 public:
-    //Picture private variables
+
+    Picture();
+
+    Picture(string n, int yr, int nom, double rate, int dur, string gen1, string gen2, int rel, int mc, string syn);
+
+    //Picture public variables
     string name;
     int year;
     int nominations;
@@ -22,7 +28,7 @@ public:
     string synopsis;
 
     //Getters
-    int getName() const;
+    string getName() const;
     int getYear() const;
     int getNominations() const;
     double getRating() const;
@@ -39,12 +45,14 @@ public:
     void setNominations(int no);
     void setRating(double ra);
     void setDuration(int du);
-    void setGenre1(int one);
-    void setGenre2(int two);
+    void setGenre1(string one);
+    void setGenre2(string two);
     void setRelease(int re);
     void setMetacritic(int me);
     void setSynopsis(string sy);
+    string print() const;
 };
 
 
 #endif //FINAL_PROJECT_PICTURE_H
+*/

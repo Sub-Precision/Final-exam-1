@@ -1,20 +1,22 @@
+/*
 //
 // Created by Allissa Hertz on 11/26/22.
 //
 
+#include <string>
 #include "Picture.h"
 using namespace std;
 
-Picture::Picture()
-{
+Picture::Picture() {
+
 }
 
-Picture::Picture(string, int, int, double, int, int, int, int, int, string)
-{
+Picture::Picture(string n, int yr, int nom, double rate, int dur, string gen1, string gen2, int rel, int mc, string syn) {
+
 }
 
 //Getters Implemented
-int Picture::getName() const {
+string Picture::getName() const {
     return name;
 }
 int Picture::getYear() const {
@@ -38,8 +40,8 @@ string Picture::getGenre2() const {
 int Picture::getRelease() const {
     return release;
 }
-int Picture::getMetacrtic() const {
-    return metacrtic;
+int Picture::getMetacritic() const {
+    return metacritic;
 }
 string Picture::getSynopsis() const {
     return synopsis;
@@ -61,10 +63,10 @@ void Picture::setRating(double ra) {
 void Picture::setDuration(int du) {
     duration = du; 
 }
-void Picture::setGenre1(int one) { 
+void Picture::setGenre1(string one) {
     genre1 = one; 
 }
-void Picture::setGenre2(int two) { 
+void Picture::setGenre2(string two) {
     genre2 = two; 
 }
 void Picture::setRelease(int re) { 
@@ -76,3 +78,49 @@ void Picture::setMetacritic(int me) {
 void Picture::setSynopsis(string sy) { 
     synopsis = sy; 
 }
+
+string Picture::print() const {
+    string returnString;
+    returnString +=this->getName()+",";
+    if (this->getYear() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getYear()) + ",";
+    }
+    if (this->getYear() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getYear()) + ",";
+    }
+    if (this->getNominations() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getNominations()) + ",";
+    }
+    if (this->getRating() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getRating()) + ",";
+    }
+    if (this->getDuration() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getDuration()) + ",";
+    }
+    returnString +=this->getGenre1()+",";
+    returnString +=this->getGenre2()+",";
+    if (this->getRelease() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getRelease()) + ",";
+    }
+    if (this->getMetacritic() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getMetacritic()) + ",";
+    }
+    returnString +=this->getMetacritic()+",";
+    returnString +=this->getSynopsis()+",";
+}
+
+*/

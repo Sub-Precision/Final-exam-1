@@ -5,11 +5,7 @@
 #include "ActorActress.h"
 using namespace std;
 
-// Contructor functionality
-ActorActress::ActorActress()
-{
-}
-ActorActress::ActorActress(int, string, bool, string, string)
+ActorActress::ActorActress(int yr, string aw, bool win, string n, string f)
 {
 }
     
@@ -34,15 +30,31 @@ string ActorActress::getFilm() const {
 void ActorActress::setYear(int y) {
     year = y;
 }
-void ActorActress::setAward(int a) {
+void ActorActress::setAward(string a) {
     award = a;
 }
-void ActorActress::setWinner(int w) {
+void ActorActress::setWinner(bool w) {
     winner = w;
 }
-void ActorActress::setName(int n) {
+void ActorActress::setName(string n) {
     name = n;
 }
-void ActorActress::setFilm(int f) {
+void ActorActress::setFilm(string f) {
     film = f;
+}
+
+string ActorActress::print() const {
+    string returnString;
+    if (this->getYear() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getYear()) + ",";
+    }
+    returnString +=this->getAward()+",";
+    if (this->getWinner())
+        returnString += "yes,";
+    else
+        returnString += "no,";
+    returnString += this->getName()+","+this->getFilm();
+    return returnString;
 }
