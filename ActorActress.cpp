@@ -9,8 +9,13 @@ using namespace std;
 ActorActress::ActorActress()
 {
 }
-ActorActress::ActorActress(int yr, string aw, bool win, string n, string f)
+ActorActress::ActorActress(int year, string award, bool isWinner, string name, string film)
 {
+    this->setYear(year);
+    this->setAward(award);
+    this->setWinner(isWinner);
+    this->setName(name);
+    this->setFilm(film);
 }
     
 //Implemented Getters
@@ -47,18 +52,20 @@ void ActorActress::setFilm(string f) {
     film = f;
 }
 
-//string ActorActress::print() const {
-//    string returnString;
-//    if (this->getYear() == -1){
-//        returnString += ",";
-//    } else {
-//        returnString += to_string(this->getYear()) + ",";
-//    }
-//    returnString +=this->getAward()+",";
-//    if (this->getWinner())
-//        returnString += "yes,";
-//    else
-//        returnString += "no,";
-//    returnString += this->getName()+","+this->getFilm();
-//    return returnString;
-//}
+
+string ActorActress::print() const {
+    //create a string formated as year,award,isWinner,name,film and print to the console
+    string returnString;
+    if (this->getYear() == -1){
+        returnString += ",";
+    } else {
+        returnString += to_string(this->getYear()) + ",";
+    }
+    returnString +=this->getAward()+",";
+    if (this->getWinner())
+        returnString += "yes,";
+    else
+        returnString += "no,";
+    returnString += this->getName()+","+this->getFilm();
+    return returnString;
+}

@@ -6,7 +6,7 @@
 #define FINAL_PROJECT_ACTORACTRESSDB_H
 #include "main.h"
 
-vector<ActorActress> loadFromFileActorActressData();
+void loadFromFileActorActressData();
 void addActorActressRecord();
 void printActorActressDb();
 void sortActorActress();

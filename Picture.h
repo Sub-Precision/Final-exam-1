@@ -50,6 +50,10 @@ public:
     void setMetacritic(int me);
     void setSynopsis(string sy);
     string print() const;
+
+    bool operator < (const Picture &picture) const {
+        return (this->name < picture.getName());
+    }
 };
 
 

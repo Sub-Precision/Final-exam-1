@@ -4,7 +4,8 @@
 
 #include "main.h"
 
-vector<ActorActress> loadFromFileActorActressData() {
+void loadFromFileActorActressData() {
+    actor_actress_db.Clear();
     int year = 0;
     string award;
     bool winner = true;
@@ -14,8 +15,7 @@ vector<ActorActress> loadFromFileActorActressData() {
 
     fstream actor_actress_file;
     //Open the actor_actress_file
-    //TODO: Need to not hardcode this file path
-    actor_actress_file.open("/Users/allissahertz/CLionProjects/final-project/actor_actress.csv");
+    actor_actress_file.open("../input/actor_actress.csv");
     vector<ActorActress> new_actor_actress_vector;
     if(!actor_actress_file){
         cerr<<"File not found\n";
@@ -49,15 +49,13 @@ vector<ActorActress> loadFromFileActorActressData() {
                 }
                 actorActress.setName(temp_actor_actress_record[3]);
                 actorActress.setFilm(temp_actor_actress_record[4]);
-                //Add all of the objects to a vector
-                new_actor_actress_vector.push_back(actorActress);
-//                cout << actorActress.print() << endl;
+                //Add all of the objects to a bst
+                actor_actress_db.Insert(actorActress);
+//                cout << "Data loaded: \n" << actorActress.print() << endl;
             }
             i++;
         }
     }
-    //The created vector is passed over to main to be used globally
-    return new_actor_actress_vector;
 }
 
 void addActorActressRecord() {
@@ -95,14 +93,8 @@ void addActorActressRecord() {
     actorActress.setName(input_name);
     actorActress.setFilm(input_film);
 
-    actor_actress_db.push_back(actorActress);
-//    cout << "Added entry to database: \n" << actorActress.print() << endl;
-}
-
-void printActorActressDb() {
-    for (int i = 0; i < actor_actress_db.size(); i++){
-//        cout << actor_actress_db[i].print() << endl;
-    }
+    actor_actress_db.Insert(actorActress);
+    cout << "Added entry to database: \n" << actorActress.print() << endl;
 }
 
 void sortActorActress(){
@@ -113,7 +105,9 @@ void sortActorActress(){
 }
 
 void searchActorActress(){
+    string actoractress_search_input;
     cout << "What would you like to search for?";
+    cin >> actoractress_search_input;
 
 }
 

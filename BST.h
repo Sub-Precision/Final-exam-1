@@ -166,7 +166,7 @@ public:
     /**
      * Insert x into the tree; duplicates are ignored.
      */
-    void Insert(const Comparable & x )
+    void Insert(Comparable & x )
     {
         _insert(x, _root);
     }
@@ -264,7 +264,7 @@ private:
     {
         if( t == nullptr )
             t = new BinaryNode{ std::move( x ), nullptr, nullptr };
-        else if( x < t->element )
+        else if(static_cast<const error_code>(x) < t->element )
             _insert(std::move(x), t->left);
         else if( t->element < x )
             _insert(std::move(x), t->right);

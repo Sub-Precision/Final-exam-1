@@ -5,6 +5,7 @@
 #ifndef FINAL_PROJECT_MAIN_H
 #define FINAL_PROJECT_MAIN_H
 
+#include "BST.h"
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -18,7 +19,7 @@ using namespace std;
 void mainMenu(bool isActorDatabase);
 vector<string> splitString(string input, char delim);
 
-inline vector<ActorActress> actor_actress_db;
-inline vector<Picture> picture_db;
+inline BinarySearchTree<ActorActress> actor_actress_db;
+inline BinarySearchTree<Picture> picture_db;
 
 #endif //FINAL_PROJECT_MAIN_H

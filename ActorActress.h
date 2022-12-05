@@ -36,6 +36,10 @@ public:
     void setName(string n);
     void setFilm(string f);
     string print() const;
+
+    bool operator < (const ActorActress &actor) const {
+        return (this->name < actor.getName());
+    }
 };
 
 

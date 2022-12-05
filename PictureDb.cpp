@@ -6,6 +6,7 @@
 #include "main.h"
 
 vector<Picture> loadFromFilePictureData() {
+    picture_db.Clear();
     string name;
     int year = 0;
     int nominations = 0;
@@ -17,9 +18,8 @@ vector<Picture> loadFromFilePictureData() {
     int metacritic = 0;
     string synopsis;
 
-
     fstream picture_file;
-    picture_file.open("/Users/allissahertz/CLionProjects/final-project/pictures.csv");
+    picture_file.open("../input/pictures.csv");
     vector<Picture> new_picture_vector;
     if(!picture_file){
         cerr<<"File not found\n";
@@ -67,8 +67,9 @@ vector<Picture> loadFromFilePictureData() {
                     picture.setMetacritic(stoi(temp_picture_record[8]));
                 }
                 picture.setSynopsis(temp_picture_record[9]);
-                new_picture_vector.push_back(picture);
-//                cout << picture.print() << endl;
+                //Add all of the objects to a bst
+                picture_db.Insert(picture);
+                cout << "Data loaded: \n" << picture.print() << endl;
             }
             i++;
         }
@@ -105,7 +106,7 @@ void addPictureRecord() {
     cin >> input_genre2;
     cout << "What year was the film released? Enter a two-digit integer to represent the year. For example, “89”.";
     cin >> input_release;
-    cout << "What was the metacritic review score?";
+    cout << "What was the metacritic review score? For example, For example, “89”.";
     cin >> input_metacrtic;
     cout << "Please enter a short synopsis of the film.";
     cin >> input_synopsis;
@@ -122,14 +123,8 @@ void addPictureRecord() {
     picture.setMetacritic(input_metacrtic);
     picture.setSynopsis(input_synopsis);
 
-    picture_db.push_back(picture);
+    picture_db.Insert(picture);
     cout << "Added entry to database: \n" << picture.print() << endl;
-}
-
-void printPictureDb() {
-    for (int i = 0; i < picture_db.size(); i++){
-        cout << picture_db[i].print() << endl;
-    }
 }
 
 void sortPicture() {
@@ -139,7 +134,9 @@ void sortPicture() {
 }
 
 void searchPicture(){
+    string picture_search_input;
     cout << "What would you like to search for?";
+    cin >> picture_search_input;
 }
 
 void saveCSVPicture() {

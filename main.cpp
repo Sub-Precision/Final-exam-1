@@ -3,30 +3,23 @@
 //The first menu that the user sees. They use this to choose which db they are interacting with
 int main() {
     int database_selection;
-    //loadFromFileActorActressData() is defined in ActorActressDb.cpp
-    //It opens the file, and uses the splitString() utility function to read in
-    //The lines and assign each item to the appropriate member variables for the ActorActress object
-    //The vector returned is globally defined in main.h so it can be used in other functions
-    actor_actress_db = loadFromFileActorActressData();
-    //loadFromFilePictureData() is defined in PictureDb.cpp
-    //It opens the file, and uses the splitString() utility function to read in
-    //The lines and assign each item to the appropriate member variables for the Picture object
-    //The vector returned is globally defined in main.h so it can be used in other functions
-    picture_db = loadFromFilePictureData();
+
     //Ask the user which db they want to use
     cout << "Hello, Welcome to the Academy Award Database!\n\nPlease choose the database you would like to view:\n1. Actor/Actress \n2. Movie\n" << std::endl;
     //store value
     cin >> database_selection;
     //if they type 1, it is the actor database
     if (database_selection == 1) {
+//        loadFromFileActorActressData();
         mainMenu(true);
     //if they type 2, it is the picture database
     } else if (database_selection == 2) {
+//        loadFromFilePictureData();
         mainMenu(false);
     //if they type anything else, they get an error message and go back to the main menu
     } else {
         cout << R"(You must enter either "1" or "2".)";
-//        main();
+        main();
     }
     return 0;
 }
