@@ -127,18 +127,37 @@ void addPictureRecord() {
     cout << "Added entry to database: \n" << picture.print() << endl;
 }
 
-void sortPicture() {
-    int fieldName;
-    cout << "What field would you like to sort by?/n/n1. Name/n2. Year/n3. Nominations/n4.Rating/n5.Duration/n6.Genre/n7.Secondary Genre/n8.Release/n9.Metacritic/n10.Synopisis/n";
-    //TODO: Add in logic to actually sort the data
+void searchPicture(){
+    //TODO: Requirement is to have an exact and partial search
+    string picture_search_input;
+    cout << "What would you like to search for? Enter the name of the film";
+    cin >> picture_search_input;
+
+    //TODO: find function needs to be added to BST. Henok is going to write this and then we can do picture_db.Find
+
+    //TODO: Once field is found, let them modify if it was the winner or not
+    //we don't need to let them modify or delete every field
+    //if picture is found modify the winner
+    //else return - movie not found
+
+    //TODO: Once field is found, let them delete the entire object
+
 }
 
-void searchPicture(){
-    string picture_search_input;
-    cout << "What would you like to search for?";
-    cin >> picture_search_input;
+void modifyPicture(){
+    //TODO: Once field is found, let them modify if it was the winner or not
+    //we don't need to let them modify or delete every field -
+    //if picture is found modify the winner
+    //else return - movie not found
+
+}
+
+void sortPicture() {
+    //TODO: Sort by name. You need to sort from left most sub tree to right to get the output
+
 }
 
 void saveCSVPicture() {
 
+    //TODO: Need to save csv to file. This is not fully implemented, I just started some of the logic
 }

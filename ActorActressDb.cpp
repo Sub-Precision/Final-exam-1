@@ -97,30 +97,45 @@ void addActorActressRecord() {
     cout << "Added entry to database: \n" << actorActress.print() << endl;
 }
 
-void sortActorActress(){
-    int fieldName;
-    cout << "What field would you like to sort by?/n/n1. Year/n2. Award/n3. Winner/n4.Name/n5.Film";
-    //TODO: Add in logic to actually sort the data
-
-}
 
 void searchActorActress(){
+    //TODO: Requirement is to have an exact and partial search
     string actoractress_search_input;
-    cout << "What would you like to search for?";
+    cout << "What would you like to search for? Enter the name of the film";
     cin >> actoractress_search_input;
+
+    //TODO: find function needs to be added to BST. Henok is going to write this and then we can do picture_db.Find
+
+    //TODO: Once elment is found, let them modify if it was the winner or not
+    //we don't need to let them modify or delete every field
+    //if picture is found modify the winner
+    //else return - movie not found
 
 }
 
+void modifyActorActress(){
+    //TODO: Once field is found, let them modify if it was the winner or not
+    //we don't need to let them modify or delete every field -
+    //if actoractress is found modify the winner
+    //else return - movie not found
+
+}
+
+void sortActorActress(){
+    //TODO: Sort by name. You need to sort from left most sub tree to right to get the output
+}
+
+
 void saveCSVActorActress() {
+
+    //TODO: Need to save csv to file. This is not fully implemented, I just started some of the logic
     string user_file_name;
     cout << "What would you like to name your file?";
     cin >> user_file_name;
     ofstream outfile(user_file_name);
 
-
     //outfile << printActorActressDb() << std::endl;
 
     outfile.close();
-
 
 }
