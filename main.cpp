@@ -10,11 +10,11 @@ int main() {
     cin >> database_selection;
     //if they type 1, it is the actor database
     if (database_selection == 1) {
-//        loadFromFileActorActressData();
+        loadFromFileActorActressData();
         mainMenu(true);
     //if they type 2, it is the picture database
     } else if (database_selection == 2) {
-//        loadFromFilePictureData();
+        loadFromFilePictureData();
         mainMenu(false);
     //if they type anything else, they get an error message and go back to the main menu
     } else {

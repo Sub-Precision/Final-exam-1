@@ -69,7 +69,8 @@ vector<Picture> loadFromFilePictureData() {
                 picture.setSynopsis(temp_picture_record[9]);
                 //Add all of the objects to a bst
                 picture_db.Insert(picture);
-                cout << "Data loaded: \n" << picture.print() << endl;
+//                cout << "Data loaded" << endl;
+//                cout << << picture.print() << endl;
             }
             i++;
         }
@@ -127,37 +128,65 @@ void addPictureRecord() {
     cout << "Added entry to database: \n" << picture.print() << endl;
 }
 
+void modifyPicture(){
+    //TODO: Once field is found, let them modify if it was the winner or not
+    //we don't need to let them modify or delete every field -
+    //if picture is found modify the rating
+    //else return - movie not found
+
+}
+
+void deleteActorActress(){
+    //TODO: Once field is found, let them delete the entire object
+}
+
 void searchPicture(){
     //TODO: Requirement is to have an exact and partial search
     string picture_search_input;
     cout << "What would you like to search for? Enter the name of the film";
     cin >> picture_search_input;
 
-    //TODO: find function needs to be added to BST. Henok is going to write this and then we can do picture_db.Find
+    //TODO: find function needs to be added to BST. Henok is going to write this and then we can use "picture_db.Find()"
+    //need to pass what we found to modify and delete functions
 
-    //TODO: Once field is found, let them modify if it was the winner or not
-    //we don't need to let them modify or delete every field
-    //if picture is found modify the winner
-    //else return - movie not found
 
-    //TODO: Once field is found, let them delete the entire object
-
-}
-
-void modifyPicture(){
-    //TODO: Once field is found, let them modify if it was the winner or not
-    //we don't need to let them modify or delete every field -
-    //if picture is found modify the winner
-    //else return - movie not found
-
+    //Menu options once they find a match so they can either modify the rating or delete the entry
+//    int modify_or_delete_input;
+//    cout << "Match found. What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry";
+//    cin >> modify_or_delete_input;
+//
+//    switch (modify_or_delete_input){
+//        case 1:
+//            modifyActorActress();
+//    break;
+//        case 2:
+//            deleteActorActress();
+//        case 0 :
+//            // Type 0 at the main menu to
+//            exit(0);
+//            break;
+//        default :
+//            cout << "Invalid input. You must enter a number 1-2 to select the corresponding menu option." << endl;
+//    }
 }
 
 void sortPicture() {
     //TODO: Sort by name. You need to sort from left most sub tree to right to get the output
-
 }
 
 void saveCSVPicture() {
-
     //TODO: Need to save csv to file. This is not fully implemented, I just started some of the logic
+    //Don't forget to add the header
+    string user_file_name;
+    cout << "What would you like to name your file?";
+    cin >> user_file_name;
+    ofstream outfile(user_file_name);
+
+    //the first line headings have to be print out separately because they are ignored when creating the BST
+    outfile<<"name,year,nominations,rating,duration,genre1,genre2,release,metacritic,synopsis\n";
+    //This doesn't work. I think we need to use the print function from BST class
+    //    outfile<<picture_db<<endl;
+
+
+    outfile.close();
 }
