@@ -1,5 +1,5 @@
 # CSCI 2421 - 001 
-* Final Programming Assignment
+* Final Programming Assignment 
 * Cade Nichols, Allissa Hertz, 
 * Cade.nichols@UCDenver.edu, 
 
