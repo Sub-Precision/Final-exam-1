@@ -1,7 +1,7 @@
 # CSCI 2421 - 001 
 * Final Programming Assignment 
-* Cade Nichols, Allissa Hertz, 
-* Cade.nichols@UCDenver.edu, 
+* Cade Nichols, Allissa Hertz, Susmitha Wilson
+* Cade.nichols@UCDenver.edu, susmitha.wilson@ucdenver.edu
 
 # Project Files
 * ActorActress.h - Contains definition of ActorActress class
