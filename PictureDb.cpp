@@ -187,21 +187,21 @@ void searchPicture(){
 }
 
 void sortPicture() {
-    //TODO: Sort by name. You need to sort from left most sub tree to right to get the output
+    //Sorting from left most sub tree to right to get the output sorted by name is done
+    picture_db.PrintTree();
 }
 
 void saveCSVPicture() {
-    //TODO: Need to save csv to file. This is not fully implemented, I just started some of the logic
+    //Save csv to file is done but I haven't added any header. I did using vector and iterator. 
     //Don't forget to add the header
     string user_file_name;
     cout << "What would you like to name your file?";
     cin >> user_file_name;
     ofstream outfile(user_file_name);
-
     //the first line headings have to be print out separately because they are ignored when creating the BST
-    outfile<<"name,year,nominations,rating,duration,genre1,genre2,release,metacritic,synopsis\n";
-    //This doesn't work. I think we need to use the print function from BST class
-    //    outfile<<picture_db<<endl;
+    outfile << "Name,Year,Nominations,Rating,Duration,Genre1,Genre2,Release,Metacritic,Synopsis" << endl;;
+    for (auto& picture : picture_vector_for_file_input)
+        outfile << picture.name << "," << picture.year << "," << picture.nominations << "," << picture.rating << "," << picture.duration<<","<< picture.genre1<<","<< picture.genre2<<","<< picture.release<<","<< picture.metacritic<<","<< picture.synopsis<< endl;
 
 
     outfile.close();
