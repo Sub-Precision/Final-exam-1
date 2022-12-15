@@ -36,9 +36,20 @@ public:
     void setName(string n);
     void setFilm(string f);
     string print() const;
-
+    explicit ActorActress(const string& actoractress_name) {
+        name = actoractress_name;
+    }
     bool operator < (const ActorActress &actor) const {
         return (this->name < actor.getName());
+    }
+    friend  ostream& operator << (ostream& out, ActorActress& actorActress) {
+        out << "Name : " << actorActress.name << "\n";
+        out << "Film : " << actorActress.film << "\n";
+        out << "Year: " << actorActress.year << "\n";
+        out << "Award : " << actorActress.award << "\n";
+        out << "Winner : " << actorActress.winner << "\n";
+        out << "-------------------------------------------------------" << "\n";
+        return out;
     }
 };
 
