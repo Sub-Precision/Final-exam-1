@@ -71,6 +71,7 @@ vector<Picture> loadFromFilePictureData() {
                 picture_db.Insert(picture);
 //                cout << "Data loaded" << endl;
 //                cout << << picture.print() << endl;
+                 picture_vector_for_file_input.push_back(picture);//Taking the file input to a vector for printing it to the output csv file
             }
             i++;
         }
@@ -138,36 +139,51 @@ void modifyPicture(){
 
 void deleteActorActress(){
     //TODO: Once field is found, let them delete the entire object
+    //It is already done in searchPicture
 }
 
 void searchPicture(){
-    //TODO: Requirement is to have an exact and partial search
+ //partial search is done based on the name
     string picture_search_input;
-    cout << "What would you like to search for? Enter the name of the film";
-    cin >> picture_search_input;
+    cin.ignore();
+    cout << "What would you like to search for? Enter the name of the film: ";
+    getline(cin, picture_search_input);
+    //cin >> picture_search_input;
 
-    //TODO: find function needs to be added to BST. Henok is going to write this and then we can use "picture_db.Find()"
+    //Find function is added to the BST.h file -> "picture_db.Find()"
     //need to pass what we found to modify and delete functions
-
-
-    //Menu options once they find a match so they can either modify the rating or delete the entry
-//    int modify_or_delete_input;
-//    cout << "Match found. What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry";
-//    cin >> modify_or_delete_input;
-//
-//    switch (modify_or_delete_input){
-//        case 1:
-//            modifyActorActress();
-//    break;
-//        case 2:
-//            deleteActorActress();
-//        case 0 :
-//            // Type 0 at the main menu to
-//            exit(0);
-//            break;
-//        default :
-//            cout << "Invalid input. You must enter a number 1-2 to select the corresponding menu option." << endl;
-//    }
+    auto picture = Picture(picture_search_input);
+    if (picture_db.Contains(picture)) {
+       auto movie = picture_db.Find(picture);
+       int modify_or_delete_input;
+       cout << "-----------Match found! Here is the record-----------" << endl;
+       cout << movie;
+       cout << "What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry "<<endl;
+       cin >> modify_or_delete_input;
+       switch (modify_or_delete_input) {
+                   case 1:
+                            //modifyactoractress();
+                            break;
+                   case 2:
+                       if (picture_db.Contains(picture)) {
+                           picture_db.Remove(picture);
+                           cout << "-----------Movie is deleted from the database!-----------"<<endl;
+                           }
+                       else {
+                           cerr << "Error! Record not found!\n";
+                       }
+                       break;
+                  case 0 :
+                       // type 0 at the main menu to
+                       exit(0);
+                      break;
+                   default :
+                      cout << "invalid input. you must enter a number 1-2 to select the corresponding menu option." << endl;
+              }
+    }
+    else {
+        cerr << picture << " not found!" << endl;
+    }
 }
 
 void sortPicture() {
