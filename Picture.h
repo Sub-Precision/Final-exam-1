@@ -50,10 +50,27 @@ public:
     void setMetacritic(int me);
     void setSynopsis(string sy);
     string print() const;
-
+    explicit Picture(const string& picture_name) {//Constructor to set the name field
+        name = picture_name;
+    }
     bool operator < (const Picture &picture) const {
         return (this->name < picture.getName());
     }
+    friend  ostream& operator << (ostream& out, Picture& picture) {//friend function to print the sorted output.
+        out << "Name : " << picture.getName()<< "\n";
+        out << "Year : " << picture.year << "\n";
+        out << "Nominations: " << picture.nominations << "\n";
+        out << "Rating : " << picture.rating << "\n";
+        out << "Duration : " << picture.duration << "\n";
+        out << "Genre1 : " << picture.genre1 << "\n";
+        out << "Genre2 : " << picture.genre2 << "\n";
+        out << "Release : " << picture.release << "\n";
+        out << "Metacritic : " << picture.metacritic << "\n";
+        out << "Synopsis : " << picture.synopsis << "\n";
+        out << "-------------------------------------------------------" << "\n";
+        return out;
+    }
+    
 };
 
 
