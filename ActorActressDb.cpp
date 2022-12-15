@@ -53,6 +53,7 @@ void loadFromFileActorActressData() {
                 actor_actress_db.Insert(actorActress);
 //                cout << "Data loaded" << endl;
 //                cout << actorActress.print() << endl;
+                 actor_actress_vector_for_file_input.push_back(actorActress);
             }
             i++;
         }
@@ -108,57 +109,66 @@ void modifyActorActress(){
 
 void deleteActorActress(){
     //TODO: Once field is found, let them delete the entire object.
-
+   //This is implemented below
 }
 
 void searchActorActress(){
-    //TODO: Requirement is to have an exact and partial search
-    string actoractress_search_input;
-    cout << "What would you like to search for? Enter the name of the film";
-    cin >> actoractress_search_input;
-
-    //TODO: find function needs to be added to BST. Henok is going to write this and then we can use "picture_db.Find()"
-    //need to pass what we found to modify and delete functions
-
-
-//Menu options once they find a match so they can either modify if the film won or delete the entry
-//    int modify_or_delete_input;
-//    cout << "Match found. What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry";
-//    cin >> modify_or_delete_input;
-//
-//    switch (modify_or_delete_input){
-//        case 1:
-//            modifyActorActress();
-//    break;
-//        case 2:
-//            deleteActorActress();
-//        case 0 :
-//            // Type 0 at the main menu to
-//            exit(0);
-//            break;
-//        default :
-//            cout << "Invalid input. You must enter a number 1-2 to select the corresponding menu option." << endl;
-//    }
+    string actoractress_search_name;
+    cout << "What would you like to search for?" << endl;
+    cout<<"Enter the name of the Actor/Actress: ";
+    cin.ignore();
+    getline(cin, actoractress_search_name);
+    auto name = ActorActress(actoractress_search_name);
+    if (actor_actress_db.Contains(name)){
+        auto _record = actor_actress_db.Find(name);
+        int modify_or_delete_input;
+        cout << "-----------Match found! Here is the record-----------" << endl;//For now partial serahc is implemented but complete search is needed
+        cout << _record;
+        cout << "What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry" << endl;
+        cin >> modify_or_delete_input;
+        switch (modify_or_delete_input) {
+        case 1:
+            //modifyactoractress();
+            break;
+        case 2:
+            if (actor_actress_db.Contains(name)) {
+                actor_actress_db.Remove(name);
+                cout << "-----------Record is deleted from the database!-----------" << endl;
+            }
+            else {
+                cerr << "Error! Record not found!\n";
+            }
+            break;
+        case 0:
+            // type 0 at the main menu to
+            exit(0);
+            break;
+        default:
+            cout << "invalid input. you must enter a number 1-2 to select the corresponding menu option." << endl;
+        }
+    }
+    else {
+        cerr << name << " Record not found!" << endl;
+    }
 }
 
 void sortActorActress(){
-    //TODO: Sort by name. You need to sort from left most sub tree to right to get the output
+    //Sorting from left most sub tree to right to get the output sorted by name is done.
+    actor_actress_db.PrintTree();
 }
 
 
 void saveCSVActorActress() {
-    //TODO: Need to save csv to file. This is not fully implemented, I just started some of the logic
+    //Save csv to file is done but I didn't add any header. I did using vector and iterator.
     //Don't forget to add the header
     string user_file_name;
     cout << "What would you like to name your file?";
     cin >> user_file_name;
     ofstream outfile(user_file_name);
-
-    //the first line headings have to be print out separately because they are ignored when creating the BST
-    outfile<<"Year,Award,Winner,Name,Film"<<endl;
-    //This doesn't work. I think we need to use the print function from BST class
-    //    outfile<<actoractress_db<<endl;
-
+     //the first line headings have to be print out separately because they are ignored when creating the BST
+    outfile << "Name,Film,Year,Award,Winner" << endl;;
+    for (auto& actoractress : actor_actress_vector_for_file_input)
+        outfile << actoractress.name << "," << actoractress.film << "," << actoractress.year << "," << actoractress.award << "," << actoractress.winner << endl;
     outfile.close();
 
 }
