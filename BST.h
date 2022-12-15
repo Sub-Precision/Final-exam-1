@@ -121,6 +121,10 @@ public:
     {
         return _contains(x, _root);
     }
+    Comparable Find(const Comparable& x) const 
+    {
+        return _find(x, _root);
+    }
 
     /**
      * Test if the tree is logically empty.
@@ -140,16 +144,16 @@ public:
             out << "Empty tree" << endl;
 
         else {
-            cout<<"Root: "<<_root->element<<endl;
-            cout<<"In-Order: ";
+            cout<<"Root: "<<_root->element<<endl;//Only inorder is enough to print the output in the sorted order
+            //cout<<"In-Order: ";
             _printTreeInorder(_root, out);
             cout<<endl;
-            cout<<"Pre-Order: ";
-            _printTreePreOrder(_root, out);
-            cout<<endl;
-            cout<<"Post-Order: ";
-            _printTreePostOrder(_root, out);
-            cout<<endl;
+            //cout<<"Pre-Order: ";
+            //_printTreePreOrder(_root, out);
+            //cout<<endl;
+            //cout<<"Post-Order: ";
+            //_printTreePostOrder(_root, out);
+            //cout<<endl;
         }
 
         out<<endl;
@@ -238,6 +242,17 @@ private:
             return _contains(x, t->right);
         else
             return true;    // Match
+    }
+    Comparable _find(const Comparable& x, BinaryNode* t) const//Find fucntion to search for an element
+    {
+        if (t == nullptr)
+            return Comparable("");
+        else if (x < t->element)
+            return _find(x, t->left);
+        else if (t->element < x)
+            return _find(x, t->right);
+        else
+            return t->element;   
     }
 
     /**
