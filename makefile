@@ -10,7 +10,7 @@ CXXFLAGS = -g -std=c++11
 OBJS = ActorActress.o ActorActressDb.o Picture.o PictureDb.o main.o
 
 ######Change from hw1 to whatever TARGET name you want for the executable.###
-TARGET = AHertzCNichols
+TARGET = AHertzCNicholsSWilson
 
 ######Do NOT change the following 5 lines...Tabs Matter!#########
 $(TARGET): $(OBJS)
