@@ -6,6 +6,7 @@
 #define FINAL_PROJECT_ACTORACTRESS_H
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 

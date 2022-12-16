@@ -99,57 +99,71 @@ void addActorActressRecord() {
     cout << "Added entry to database: \n" << actorActress.print() << endl;
 }
 
-void modifyActorActress(){
-    //TODO: Once field is found, let them modify if it was the winner or not
-    //we don't need to let them modify or delete every field -
-    //if actoractress is found modify the winner
-    //else return - movie not found
 
-}
-
-void deleteActorActress(){
-    //TODO: Once field is found, let them delete the entire object.
-   //This is implemented below
-}
 
 void searchActorActress(){
+    //partial search is done based on the name of the actor/actress
     string actoractress_search_name;
+
     cout << "What would you like to search for?" << endl;
     cout<<"Enter the name of the Actor/Actress: ";
     cin.ignore();
     getline(cin, actoractress_search_name);
-    auto name = ActorActress(actoractress_search_name);
-    if (actor_actress_db.Contains(name)){
-        auto _record = actor_actress_db.Find(name);
-        int modify_or_delete_input;
-        cout << "-----------Match found! Here is the record-----------" << endl;//For now partial serahc is implemented but complete search is needed
-        cout << _record;
-        cout << "What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry" << endl;
-        cin >> modify_or_delete_input;
-        switch (modify_or_delete_input) {
-        case 1:
-            //modifyactoractress();
-            break;
-        case 2:
-            if (actor_actress_db.Contains(name)) {
-                actor_actress_db.Remove(name);
-                cout << "-----------Record is deleted from the database!-----------" << endl;
-            }
-            else {
-                cerr << "Error! Record not found!\n";
-            }
-            break;
-        case 0:
-            // type 0 at the main menu to
-            exit(0);
-            break;
-        default:
-            cout << "invalid input. you must enter a number 1-2 to select the corresponding menu option." << endl;
+
+    vector<ActorActress> allNodes = actor_actress_db.getAllNodes();
+    for(ActorActress AA : allNodes)
+    {
+        if (AA.getName().find(actoractress_search_name) != std::string::npos)
+        {
+            cout << AA << endl;
         }
+
     }
-    else {
-        cerr << name << " Record not found!" << endl;
-    }
+
+//    auto name = ActorActress(actoractress_search_name);
+//    cout << "The name:" << endl;
+//    //Pull all the actoractress names
+//
+//    //create a new vector
+//    //read each actoractress name and see if it contains the string
+//    //if it does, print it
+//
+//    if (actor_actress_db.Contains(name)){
+//        auto _record = actor_actress_db.Find(name);
+//        int modify_or_delete_input;
+//        cout << "-----------Match found! Here is the record-----------" << endl;//For now partial serahc is implemented but complete search is needed
+//        cout << _record;
+//        cout << "What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry" << endl;
+//        cin >> modify_or_delete_input;
+//        switch (modify_or_delete_input) {
+//        case 1:
+//            //TODO: Once field is found, let them modify if it was the winner or not
+//            //we don't need to let them modify or delete every field -
+//            //if actoractress is found modify the winner
+//            //else return - movie not found
+//            break;
+//        case 2:
+//            if (actor_actress_db.Contains(name)) {
+//                actor_actress_db.Remove(name);
+//                cout << "-----------Record is deleted from the database!-----------" << endl;
+//            }
+//            else {
+//                cerr << "Error! Record not found!\n";
+//                mainMenu(true);
+//            }
+//            break;
+//        case 0:
+//            // type 0 at the main menu to
+//            exit(0);
+//            break;
+//        default:
+//            cout << "Invalid input. you must enter a number 1-2 to select the corresponding menu option." << endl;
+//        }
+//    }
+//    else {
+//        cerr << name << " Record not found!" << endl;
+//        mainMenu(true);
+//    }
 }
 
 void sortActorActress(){

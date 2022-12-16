@@ -127,7 +127,7 @@ Year,Award,Winner,Name,Film
 1938,Actress in a Supporting Role,0,Billie Burke,Merrily We Live
 1938,Actress in a Supporting Role,0,Spring Byington,You Can't Take It with You
 1938,Actress in a Supporting Role,0,Miliza Korjus,The Great Waltz
-1939,Actor in a Leading Role,1,Robert Donat,"Goodbye, Mr. Chips"
+1939,Actor in a Leading Role,1,Robert Donat,Goodbye, Mr. Chips
 1939,Actor in a Supporting Role,1,Thomas Mitchell,Stagecoach
 1939,Actress in a Leading Role,1,Vivien Leigh,Gone with the Wind
 1939,Actress in a Supporting Role,1,Hattie McDaniel,Gone with the Wind
@@ -142,7 +142,7 @@ Year,Award,Winner,Name,Film
 1939,Actress in a Leading Role,0,Bette Davis,Dark Victory
 1939,Actress in a Leading Role,0,Irene Dunne,Love Affair
 1939,Actress in a Leading Role,0,Greta Garbo,Ninotchka
-1939,Actress in a Leading Role,0,Greer Garson,"Goodbye, Mr. Chips"
+1939,Actress in a Leading Role,0,Greer Garson,Goodbye, Mr. Chips
 1939,Actress in a Supporting Role,0,Olivia de Havilland,Gone with the Wind
 1939,Actress in a Supporting Role,0,Geraldine Fitzgerald,Wuthering Heights
 1939,Actress in a Supporting Role,0,Edna May Oliver,Drums along the Mohawk
@@ -165,7 +165,7 @@ Year,Award,Winner,Name,Film
 1940,Actress in a Leading Role,0,Martha Scott,Our Town
 1940,Actress in a Supporting Role,0,Judith Anderson,Rebecca
 1940,Actress in a Supporting Role,0,Ruth Hussey,The Philadelphia Story
-1940,Actress in a Supporting Role,0,Barbara O'Neil,"All This, and Heaven Too"
+1940,Actress in a Supporting Role,0,Barbara O'Neil,All This, and Heaven Too
 1940,Actress in a Supporting Role,0,Marjorie Rambeau,Primrose Path
 1941,Actor in a Leading Role,1,Gary Cooper,Sergeant York
 1941,Actor in a Supporting Role,1,Donald Crisp,How Green Was My Valley
@@ -199,11 +199,11 @@ Year,Award,Winner,Name,Film
 1942,Actor in a Supporting Role,0,Walter Huston,Yankee Doodle Dandy
 1942,Actor in a Supporting Role,0,Frank Morgan,Tortilla Flat
 1942,Actor in a Supporting Role,0,Henry Travers,Mrs. Miniver
-1942,Actress in a Leading Role,0,Bette Davis,"Now, Voyager"
+1942,Actress in a Leading Role,0,Bette Davis,Now, Voyager
 1942,Actress in a Leading Role,0,Katharine Hepburn,Woman of the Year
 1942,Actress in a Leading Role,0,Rosalind Russell,My Sister Eileen
 1942,Actress in a Leading Role,0,Teresa Wright,The Pride of the Yankees
-1942,Actress in a Supporting Role,0,Gladys Cooper,"Now, Voyager"
+1942,Actress in a Supporting Role,0,Gladys Cooper,Now, Voyager
 1942,Actress in a Supporting Role,0,Agnes Moorehead,The Magnificent Ambersons
 1942,Actress in a Supporting Role,0,Susan Peters,Random Harvest
 1942,Actress in a Supporting Role,0,Dame May Whitty,Mrs. Miniver
@@ -316,13 +316,13 @@ Year,Award,Winner,Name,Film
 1948,Actor in a Leading Role,0,Dan Dailey,When My Baby Smiles at Me
 1948,Actor in a Leading Role,0,Clifton Webb,Sitting Pretty
 1948,Actor in a Supporting Role,0,Charles Bickford,Johnny Belinda
-1948,Actor in a Supporting Role,0,Josí (c) Ferrer,Joan of Arc
+1948,Actor in a Supporting Role,0,Josï¿½ (c) Ferrer,Joan of Arc
 1948,Actor in a Supporting Role,0,Oscar Homolka,I Remember Mama
 1948,Actor in a Supporting Role,0,Cecil Kellaway,The Luck of the Irish
 1948,Actress in a Leading Role,0,Ingrid Bergman,Joan of Arc
 1948,Actress in a Leading Role,0,Olivia de Havilland,The Snake Pit
 1948,Actress in a Leading Role,0,Irene Dunne,I Remember Mama
-1948,Actress in a Leading Role,0,Barbara Stanwyck,"Sorry, Wrong Number"
+1948,Actress in a Leading Role,0,Barbara Stanwyck,Sorry, Wrong Number
 1948,Actress in a Supporting Role,0,Barbara Bel Geddes,I Remember Mama
 1948,Actress in a Supporting Role,0,Ellen Corby,I Remember Mama
 1948,Actress in a Supporting Role,0,Agnes Moorehead,Johnny Belinda
@@ -341,13 +341,13 @@ Year,Award,Winner,Name,Film
 1949,Actor in a Supporting Role,0,James Whitmore,Battleground
 1949,Actress in a Leading Role,0,Jeanne Crain,Pinky
 1949,Actress in a Leading Role,0,Susan Hayward,My Foolish Heart
-1949,Actress in a Leading Role,0,Deborah Kerr,"Edward, My Son"
+1949,Actress in a Leading Role,0,Deborah Kerr,Edward, My Son
 1949,Actress in a Leading Role,0,Loretta Young,Come to the Stable
 1949,Actress in a Supporting Role,0,Ethel Barrymore,Pinky
 1949,Actress in a Supporting Role,0,Celeste Holm,Come to the Stable
 1949,Actress in a Supporting Role,0,Elsa Lanchester,Come to the Stable
 1949,Actress in a Supporting Role,0,Ethel Waters,Pinky
-1950,Actor in a Leading Role,1,Josí (C) Ferrer,Cyrano de Bergerac
+1950,Actor in a Leading Role,1,Josï¿½ (C) Ferrer,Cyrano de Bergerac
 1950,Actor in a Supporting Role,1,George Sanders,All about Eve
 1950,Actress in a Leading Role,1,Judy Holliday,Born Yesterday
 1950,Actress in a Supporting Role,1,Josephine Hull,Harvey
@@ -389,7 +389,7 @@ Year,Award,Winner,Name,Film
 1951,Actress in a Supporting Role,0,Thelma Ritter,The Mating Season
 1952,Actor in a Leading Role,1,Gary Cooper,High Noon
 1952,Actor in a Supporting Role,1,Anthony Quinn,Viva Zapata!
-1952,Actress in a Leading Role,1,Shirley Booth,"Come Back, Little Sheba"
+1952,Actress in a Leading Role,1,Shirley Booth,Come Back, Little Sheba
 1952,Actress in a Supporting Role,1,Gloria Grahame,The Bad and the Beautiful
 1952,Actor in a Leading Role,0,Marlon Brando,Viva Zapata!
 1952,Actor in a Leading Role,0,Kirk Douglas,The Bad and the Beautiful
@@ -405,7 +405,7 @@ Year,Award,Winner,Name,Film
 1952,Actress in a Leading Role,0,Susan Hayward,With a Song in My Heart
 1952,Actress in a Supporting Role,0,Jean Hagen,Singin' in the Rain
 1952,Actress in a Supporting Role,0,Colette Marchand,Moulin Rouge
-1952,Actress in a Supporting Role,0,Terry Moore,"Come Back, Little Sheba"
+1952,Actress in a Supporting Role,0,Terry Moore,Come Back, Little Sheba
 1952,Actress in a Supporting Role,0,Thelma Ritter,With a Song in My Heart
 1953,Actor in a Leading Role,1,William Holden,Stalag 17
 1953,Actor in a Supporting Role,1,Frank Sinatra,From Here to Eternity
@@ -499,7 +499,7 @@ Year,Award,Winner,Name,Film
 1957,Actor in a Supporting Role,0,Sessue Hayakawa,The Bridge on the River Kwai
 1957,Actor in a Supporting Role,0,Arthur Kennedy,Peyton Place
 1957,Actor in a Supporting Role,0,Russ Tamblyn,Peyton Place
-1957,Actress in a Leading Role,0,Deborah Kerr,"Heaven Knows, Mr. Allison"
+1957,Actress in a Leading Role,0,Deborah Kerr,Heaven Knows, Mr. Allison
 1957,Actress in a Leading Role,0,Anna Magnani,Wild Is the Wind
 1957,Actress in a Leading Role,0,Elizabeth Taylor,Raintree County
 1957,Actress in a Leading Role,0,Lana Turner,Peyton Place
@@ -541,8 +541,8 @@ Year,Award,Winner,Name,Film
 1959,Actor in a Supporting Role,0,Ed Wynn,The Diary of Anne Frank
 1959,Actress in a Leading Role,0,Doris Day,Pillow Talk
 1959,Actress in a Leading Role,0,Audrey Hepburn,The Nun's Story
-1959,Actress in a Leading Role,0,Katharine Hepburn,"Suddenly, Last Summer"
-1959,Actress in a Leading Role,0,Elizabeth Taylor,"Suddenly, Last Summer"
+1959,Actress in a Leading Role,0,Katharine Hepburn,Suddenly, Last Summer
+1959,Actress in a Leading Role,0,Elizabeth Taylor,Suddenly, Last Summer
 1959,Actress in a Supporting Role,0,Hermione Baddeley,Room at the Top
 1959,Actress in a Supporting Role,0,Susan Kohner,Imitation of Life
 1959,Actress in a Supporting Role,0,Juanita Moore,Imitation of Life
@@ -555,7 +555,7 @@ Year,Award,Winner,Name,Film
 1960,Actor in a Leading Role,0,Jack Lemmon,The Apartment
 1960,Actor in a Leading Role,0,Laurence Olivier,The Entertainer
 1960,Actor in a Leading Role,0,Spencer Tracy,Inherit the Wind
-1960,Actor in a Supporting Role,0,Peter Falk,"Murder, Inc."
+1960,Actor in a Supporting Role,0,Peter Falk,Murder, Inc.
 1960,Actor in a Supporting Role,0,Jack Kruschen,The Apartment
 1960,Actor in a Supporting Role,0,Sal Mineo,Exodus
 1960,Actor in a Supporting Role,0,Chill Wills,The Alamo
@@ -616,7 +616,7 @@ Year,Award,Winner,Name,Film
 1963,Actor in a Leading Role,0,Rex Harrison,Cleopatra
 1963,Actor in a Leading Role,0,Paul Newman,Hud
 1963,Actor in a Supporting Role,0,Nick Adams,Twilight of Honor
-1963,Actor in a Supporting Role,0,Bobby Darin,"Captain Newman, M.D."
+1963,Actor in a Supporting Role,0,Bobby Darin,Captain Newman, M.D.
 1963,Actor in a Supporting Role,0,Hugh Griffith,Tom Jones
 1963,Actor in a Supporting Role,0,John Huston,The Cardinal
 1963,Actress in a Leading Role,0,Leslie Caron,The L-Shaped Room
@@ -646,7 +646,7 @@ Year,Award,Winner,Name,Film
 1964,Actress in a Supporting Role,0,Gladys Cooper,My Fair Lady
 1964,Actress in a Supporting Role,0,Dame Edith Evans,The Chalk Garden
 1964,Actress in a Supporting Role,0,Grayson Hall,The Night of the Iguana
-1964,Actress in a Supporting Role,0,Agnes Moorehead,"Hush...Hush, Sweet Charlotte"
+1964,Actress in a Supporting Role,0,Agnes Moorehead,Hush...Hush, Sweet Charlotte
 1965,Actor in a Leading Role,1,Lee Marvin,Cat Ballou
 1965,Actor in a Supporting Role,1,Martin Balsam,A Thousand Clowns
 1965,Actress in a Leading Role,1,Julie Christie,Darling
@@ -722,31 +722,31 @@ Year,Award,Winner,Name,Film
 1968,Actor in a Supporting Role,0,Gene Wilder,The Producers
 1968,Actress in a Leading Role,0,Patricia Neal,The Subject Was Roses
 1968,Actress in a Leading Role,0,Vanessa Redgrave,Isadora
-1968,Actress in a Leading Role,0,Joanne Woodward,"Rachel, Rachel"
+1968,Actress in a Leading Role,0,Joanne Woodward,Rachel, Rachel
 1968,Actress in a Supporting Role,0,Lynn Carlin,Faces
 1968,Actress in a Supporting Role,0,Sondra Locke,The Heart Is a Lonely Hunter
 1968,Actress in a Supporting Role,0,Kay Medford,Funny Girl
-1968,Actress in a Supporting Role,0,Estelle Parsons,"Rachel, Rachel"
+1968,Actress in a Supporting Role,0,Estelle Parsons,Rachel, Rachel
 1969,Actor in a Leading Role,1,John Wayne,True Grit
-1969,Actor in a Supporting Role,1,Gig Young,"They Shoot Horses, Don't They?"
+1969,Actor in a Supporting Role,1,Gig Young,They Shoot Horses, Don't They?
 1969,Actress in a Leading Role,1,Maggie Smith,The Prime of Miss Jean Brodie
 1969,Actress in a Supporting Role,1,Goldie Hawn,Cactus Flower
 1969,Actor in a Leading Role,0,Richard Burton,Anne of the Thousand Days
 1969,Actor in a Leading Role,0,Dustin Hoffman,Midnight Cowboy
-1969,Actor in a Leading Role,0,Peter O'Toole,"Goodbye, Mr. Chips"
+1969,Actor in a Leading Role,0,Peter O'Toole,Goodbye, Mr. Chips
 1969,Actor in a Leading Role,0,Jon Voight,Midnight Cowboy
 1969,Actor in a Supporting Role,0,Rupert Crosse,The Reivers
 1969,Actor in a Supporting Role,0,Elliott Gould,Bob & Carol & Ted & Alice
 1969,Actor in a Supporting Role,0,Jack Nicholson,Easy Rider
 1969,Actor in a Supporting Role,0,Anthony Quayle,Anne of the Thousand Days
 1969,Actress in a Leading Role,0,Genevieve Bujold,Anne of the Thousand Days
-1969,Actress in a Leading Role,0,Jane Fonda,"They Shoot Horses, Don't They?"
+1969,Actress in a Leading Role,0,Jane Fonda,They Shoot Horses, Don't They?
 1969,Actress in a Leading Role,0,Liza Minnelli,The Sterile Cuckoo
 1969,Actress in a Leading Role,0,Jean Simmons,The Happy Ending
 1969,Actress in a Supporting Role,0,Catherine Burns,Last Summer
 1969,Actress in a Supporting Role,0,Dyan Cannon,Bob & Carol & Ted & Alice
 1969,Actress in a Supporting Role,0,Sylvia Miles,Midnight Cowboy
-1969,Actress in a Supporting Role,0,Susannah York,"They Shoot Horses, Don't They?"
+1969,Actress in a Supporting Role,0,Susannah York,They Shoot Horses, Don't They?
 1970,Actor in a Leading Role,1,George C. Scott,Patton
 1970,Actor in a Supporting Role,1,John Mills,Ryan's Daughter
 1970,Actress in a Leading Role,1,Glenda Jackson,Women in Love
@@ -781,7 +781,7 @@ Year,Award,Winner,Name,Film
 1971,Actor in a Supporting Role,0,Roy Scheider,The French Connection
 1971,Actress in a Leading Role,0,Julie Christie,McCabe & Mrs. Miller
 1971,Actress in a Leading Role,0,Glenda Jackson,Sunday Bloody Sunday
-1971,Actress in a Leading Role,0,Vanessa Redgrave,"Mary, Queen of Scots"
+1971,Actress in a Leading Role,0,Vanessa Redgrave,Mary, Queen of Scots
 1971,Actress in a Leading Role,0,Janet Suzman,Nicholas and Alexandra
 1971,Actress in a Supporting Role,0,Ann-Margret,Carnal Knowledge
 1971,Actress in a Supporting Role,0,Ellen Burstyn,The Last Picture Show
@@ -822,11 +822,11 @@ Year,Award,Winner,Name,Film
 1973,Actress in a Leading Role,0,Ellen Burstyn,The Exorcist
 1973,Actress in a Leading Role,0,Marsha Mason,Cinderella Liberty
 1973,Actress in a Leading Role,0,Barbra Streisand,The Way We Were
-1973,Actress in a Leading Role,0,Joanne Woodward,"Summer Wishes, Winter Dreams"
+1973,Actress in a Leading Role,0,Joanne Woodward,Summer Wishes, Winter Dreams
 1973,Actress in a Supporting Role,0,Linda Blair,The Exorcist
 1973,Actress in a Supporting Role,0,Candy Clark,American Graffiti
 1973,Actress in a Supporting Role,0,Madeline Kahn,Paper Moon
-1973,Actress in a Supporting Role,0,Sylvia Sidney,"Summer Wishes, Winter Dreams"
+1973,Actress in a Supporting Role,0,Sylvia Sidney,Summer Wishes, Winter Dreams
 1974,Actor in a Leading Role,1,Art Carney,Harry and Tonto
 1974,Actor in a Supporting Role,1,Robert De Niro,The Godfather Part II
 1974,Actress in a Leading Role,1,Ellen Burstyn,Alice Doesn't Live Here Anymore
@@ -854,7 +854,7 @@ Year,Award,Winner,Name,Film
 1975,Actor in a Leading Role,0,Walter Matthau,The Sunshine Boys
 1975,Actor in a Leading Role,0,Al Pacino,Dog Day Afternoon
 1975,Actor in a Leading Role,0,Maximilian Schell,The Man in the Glass Booth
-1975,Actor in a Leading Role,0,James Whitmore,"Give 'em Hell, Harry!"
+1975,Actor in a Leading Role,0,James Whitmore,Give 'em Hell, Harry!
 1975,Actor in a Supporting Role,0,Brad Dourif,One Flew over the Cuckoo's Nest
 1975,Actor in a Supporting Role,0,Burgess Meredith,The Day of the Locust
 1975,Actor in a Supporting Role,0,Chris Sarandon,Dog Day Afternoon
@@ -864,7 +864,7 @@ Year,Award,Winner,Name,Film
 1975,Actress in a Leading Role,0,Glenda Jackson,Hedda
 1975,Actress in a Leading Role,0,Carol Kane,Hester Street
 1975,Actress in a Supporting Role,0,Ronee Blakley,Nashville
-1975,Actress in a Supporting Role,0,Sylvia Miles,"Farewell, My Lovely"
+1975,Actress in a Supporting Role,0,Sylvia Miles,Farewell, My Lovely
 1975,Actress in a Supporting Role,0,Lily Tomlin,Nashville
 1975,Actress in a Supporting Role,0,Brenda Vaccaro,Jacqueline Susann's Once Is Not Enough
 1976,Actor in a Leading Role,1,Peter Finch,Network
@@ -879,7 +879,7 @@ Year,Award,Winner,Name,Film
 1976,Actor in a Supporting Role,0,Burgess Meredith,Rocky
 1976,Actor in a Supporting Role,0,Laurence Olivier,Marathon Man
 1976,Actor in a Supporting Role,0,Burt Young,Rocky
-1976,Actress in a Leading Role,0,Marie-Christine Barrault,"Cousin, Cousine"
+1976,Actress in a Leading Role,0,Marie-Christine Barrault,Cousin, Cousine
 1976,Actress in a Leading Role,0,Talia Shire,Rocky
 1976,Actress in a Leading Role,0,Sissy Spacek,Carrie
 1976,Actress in a Leading Role,0,Liv Ullmann,Face to Face
@@ -920,7 +920,7 @@ Year,Award,Winner,Name,Film
 1978,Actor in a Supporting Role,0,John Hurt,Midnight Express
 1978,Actor in a Supporting Role,0,Jack Warden,Heaven Can Wait
 1978,Actress in a Leading Role,0,Ingrid Bergman,Autumn Sonata
-1978,Actress in a Leading Role,0,Ellen Burstyn,"Same Time, Next Year"
+1978,Actress in a Leading Role,0,Ellen Burstyn,Same Time, Next Year
 1978,Actress in a Leading Role,0,Jill Clayburgh,An Unmarried Woman
 1978,Actress in a Leading Role,0,Geraldine Page,Interiors
 1978,Actress in a Supporting Role,0,Dyan Cannon,Heaven Can Wait
@@ -978,7 +978,7 @@ Year,Award,Winner,Name,Film
 1981,Actor in a Supporting Role,0,James Coco,Only When I Laugh
 1981,Actor in a Supporting Role,0,Ian Holm,Chariots of Fire
 1981,Actor in a Supporting Role,0,Jack Nicholson,Reds
-1981,Actor in a Supporting Role,0,"Howard E. Rollins, Jr.",Ragtime
+1981,Actor in a Supporting Role,0,Howard E. Rollins, Jr.,Ragtime
 1981,Actress in a Leading Role,0,Diane Keaton,Reds
 1981,Actress in a Leading Role,0,Marsha Mason,Only When I Laugh
 1981,Actress in a Leading Role,0,Susan Sarandon,Atlantic City
@@ -988,7 +988,7 @@ Year,Award,Winner,Name,Film
 1981,Actress in a Supporting Role,0,Joan Hackett,Only When I Laugh
 1981,Actress in a Supporting Role,0,Elizabeth McGovern,Ragtime
 1982,Actor in a Leading Role,1,Ben Kingsley,Gandhi
-1982,Actor in a Supporting Role,1,"Louis Gossett, Jr.",An Officer and a Gentleman
+1982,Actor in a Supporting Role,1,Louis Gossett, Jr.,An Officer and a Gentleman
 1982,Actress in a Leading Role,1,Meryl Streep,Sophie's Choice
 1982,Actress in a Supporting Role,1,Jessica Lange,Tootsie
 1982,Actor in a Leading Role,0,Dustin Hoffman,Tootsie
@@ -1012,7 +1012,7 @@ Year,Award,Winner,Name,Film
 1983,Actress in a Leading Role,1,Shirley MacLaine,Terms of Endearment
 1983,Actress in a Supporting Role,1,Linda Hunt,The Year of Living Dangerously
 1983,Actor in a Leading Role,0,Michael Caine,Educating Rita
-1983,Actor in a Leading Role,0,Tom Conti,"Reuben, Reuben"
+1983,Actor in a Leading Role,0,Tom Conti,Reuben, Reuben
 1983,Actor in a Leading Role,0,Tom Courtenay,The Dresser
 1983,Actor in a Leading Role,0,Albert Finney,The Dresser
 1983,Actor in a Supporting Role,0,Charles Durning,To Be or Not to Be
@@ -1038,7 +1038,7 @@ Year,Award,Winner,Name,Film
 1984,Actor in a Supporting Role,0,Adolph Caesar,A Soldier's Story
 1984,Actor in a Supporting Role,0,John Malkovich,Places in the Heart
 1984,Actor in a Supporting Role,0,Noriyuki 'Pat' Morita,The Karate Kid
-1984,Actor in a Supporting Role,0,Ralph Richardson,"Greystoke: The Legend of Tarzan, Lord of the Apes"
+1984,Actor in a Supporting Role,0,Ralph Richardson,Greystoke: The Legend of Tarzan, Lord of the Apes
 1984,Actress in a Leading Role,0,Judy Davis,A Passage to India
 1984,Actress in a Leading Role,0,Jessica Lange,Country
 1984,Actress in a Leading Role,0,Vanessa Redgrave,The Bostonians
@@ -1094,7 +1094,7 @@ Year,Award,Winner,Name,Film
 1987,Actor in a Leading Role,0,William Hurt,Broadcast News
 1987,Actor in a Leading Role,0,Marcello Mastroianni,Dark Eyes
 1987,Actor in a Leading Role,0,Jack Nicholson,Ironweed
-1987,Actor in a Leading Role,0,Robin Williams,"Good Morning, Vietnam"
+1987,Actor in a Leading Role,0,Robin Williams,Good Morning, Vietnam
 1987,Actor in a Supporting Role,0,Albert Brooks,Broadcast News
 1987,Actor in a Supporting Role,0,Morgan Freeman,Street Smart
 1987,Actor in a Supporting Role,0,Vincent Gardenia,Moonstruck
@@ -1143,8 +1143,8 @@ Year,Award,Winner,Name,Film
 1989,Actress in a Leading Role,0,Pauline Collins,Shirley Valentine
 1989,Actress in a Leading Role,0,Jessica Lange,Music Box
 1989,Actress in a Leading Role,0,Michelle Pfeiffer,The Fabulous Baker Boys
-1989,Actress in a Supporting Role,0,Anjelica Huston,"Enemies, A Love Story"
-1989,Actress in a Supporting Role,0,Lena Olin,"Enemies, A Love Story"
+1989,Actress in a Supporting Role,0,Anjelica Huston,Enemies, A Love Story
+1989,Actress in a Supporting Role,0,Lena Olin,Enemies, A Love Story
 1989,Actress in a Supporting Role,0,Julia Roberts,Steel Magnolias
 1989,Actress in a Supporting Role,0,Dianne Wiest,Parenthood
 1990,Actor in a Leading Role,1,Jeremy Irons,Reversal of Fortune
@@ -1156,7 +1156,7 @@ Year,Award,Winner,Name,Film
 1990,Actor in a Leading Role,0,Gerard Depardieu,Cyrano de Bergerac
 1990,Actor in a Leading Role,0,Richard Harris,The Field
 1990,Actor in a Supporting Role,0,Bruce Davison,Longtime Companion
-1990,Actor in a Supporting Role,0,Andy Garcia,"The Godfather, Part III"
+1990,Actor in a Supporting Role,0,Andy Garcia,The Godfather, Part III
 1990,Actor in a Supporting Role,0,Graham Greene,Dances With Wolves
 1990,Actor in a Supporting Role,0,Al Pacino,Dick Tracy
 1990,Actress in a Leading Role,0,Anjelica Huston,The Grifters
@@ -1268,7 +1268,7 @@ Year,Award,Winner,Name,Film
 1995,Actress in a Supporting Role,0,Mare Winningham,Georgia
 1995,Actress in a Supporting Role,0,Kate Winslet,Sense and Sensibility
 1996,Actor in a Leading Role,1,Geoffrey Rush,Shine
-1996,Actor in a Supporting Role,1,"Cuba Gooding, Jr.",Jerry Maguire
+1996,Actor in a Supporting Role,1,Cuba Gooding, Jr.,Jerry Maguire
 1996,Actress in a Leading Role,1,Frances McDormand,Fargo
 1996,Actress in a Supporting Role,1,Juliette Binoche,The English Patient
 1996,Actor in a Leading Role,0,Tom Cruise,Jerry Maguire
@@ -1330,7 +1330,7 @@ Year,Award,Winner,Name,Film
 1999,Actor in a Leading Role,1,Kevin Spacey,American Beauty
 1999,Actor in a Supporting Role,1,Michael Caine,The Cider House Rules
 1999,Actress in a Leading Role,1,Hilary Swank,Boys Don't Cry
-1999,Actress in a Supporting Role,1,Angelina Jolie,"Girl, Interrupted"
+1999,Actress in a Supporting Role,1,Angelina Jolie,Girl, Interrupted
 1999,Actor in a Leading Role,0,Russell Crowe,The Insider
 1999,Actor in a Leading Role,0,Richard Farnsworth,The Straight Story
 1999,Actor in a Leading Role,0,Sean Penn,Sweet and Lowdown
@@ -1346,7 +1346,7 @@ Year,Award,Winner,Name,Film
 1999,Actress in a Supporting Role,0,Toni Collette,The Sixth Sense
 1999,Actress in a Supporting Role,0,Catherine Keener,Being John Malkovich
 1999,Actress in a Supporting Role,0,Samantha Morton,Sweet and Lowdown
-1999,Actress in a Supporting Role,0,Chloí‚ Sevigny,Boys Don't Cry
+1999,Actress in a Supporting Role,0,Chloï¿½ Sevigny,Boys Don't Cry
 2000,Actor in a Leading Role,1,Russell Crowe,Gladiator
 2000,Actor in a Supporting Role,1,Benicio Del Toro,Traffic
 2000,Actress in a Leading Role,1,Julia Roberts,Erin Brockovich
@@ -1382,7 +1382,7 @@ Year,Award,Winner,Name,Film
 2001,Actress in a Leading Role,0,Judi Dench,Iris
 2001,Actress in a Leading Role,0,Nicole Kidman,Moulin Rouge
 2001,Actress in a Leading Role,0,Sissy Spacek,In the Bedroom
-2001,Actress in a Leading Role,0,Rení©e Zellweger,Bridget Jones's Diary
+2001,Actress in a Leading Role,0,Renï¿½e Zellweger,Bridget Jones's Diary
 2001,Actress in a Supporting Role,0,Helen Mirren,Gosford Park
 2001,Actress in a Supporting Role,0,Maggie Smith,Gosford Park
 2001,Actress in a Supporting Role,0,Marisa Tomei,In the Bedroom
@@ -1402,7 +1402,7 @@ Year,Award,Winner,Name,Film
 2002,Actress in a Leading Role,0,Salma Hayek,Frida
 2002,Actress in a Leading Role,0,Diane Lane,Unfaithful
 2002,Actress in a Leading Role,0,Julianne Moore,Far from Heaven
-2002,Actress in a Leading Role,0,Rení©e Zellweger,Chicago
+2002,Actress in a Leading Role,0,Renï¿½e Zellweger,Chicago
 2002,Actress in a Supporting Role,0,Kathy Bates,About Schmidt
 2002,Actress in a Supporting Role,0,Julianne Moore,The Hours
 2002,Actress in a Supporting Role,0,Queen Latifah,Chicago
@@ -1410,7 +1410,7 @@ Year,Award,Winner,Name,Film
 2003,Actor in a Leading Role,1,Sean Penn,Mystic River
 2003,Actor in a Supporting Role,1,Tim Robbins,Mystic River
 2003,Actress in a Leading Role,1,Charlize Theron,Monster
-2003,Actress in a Supporting Role,1,Rení©e Zellweger,Cold Mountain
+2003,Actress in a Supporting Role,1,Renï¿½e Zellweger,Cold Mountain
 2003,Actor in a Leading Role,0,Johnny Depp,Pirates of the Caribbean: The Curse of the Black Pearl
 2003,Actor in a Leading Role,0,Ben Kingsley,House of Sand and Fog
 2003,Actor in a Leading Role,0,Jude Law,Cold Mountain
@@ -1454,7 +1454,7 @@ Year,Award,Winner,Name,Film
 2005,Actor in a Leading Role,0,Terrence Howard,Hustle & Flow
 2005,Actor in a Leading Role,0,Heath Ledger,Brokeback Mountain
 2005,Actor in a Leading Role,0,Joaquin Phoenix,Walk the Line
-2005,Actor in a Leading Role,0,David Strathairn,"Good Night, and Good Luck."
+2005,Actor in a Leading Role,0,David Strathairn,Good Night, and Good Luck.
 2005,Actor in a Supporting Role,0,Matt Dillon,Crash
 2005,Actor in a Supporting Role,0,Paul Giamatti,Cinderella Man
 2005,Actor in a Supporting Role,0,Jake Gyllenhaal,Brokeback Mountain
@@ -1479,7 +1479,7 @@ Year,Award,Winner,Name,Film
 2006,Actor in a Supporting Role,0,Djimon Hounsou,Blood Diamond
 2006,Actor in a Supporting Role,0,Eddie Murphy,Dreamgirls
 2006,Actor in a Supporting Role,0,Mark Wahlberg,The Departed
-2006,Actress in a Leading Role,0,Pení©lope Cruz,Volver
+2006,Actress in a Leading Role,0,Penï¿½lope Cruz,Volver
 2006,Actress in a Leading Role,0,Judi Dench,Notes on a Scandal
 2006,Actress in a Leading Role,0,Meryl Streep,The Devil Wears Prada
 2006,Actress in a Leading Role,0,Kate Winslet,Little Children
@@ -1510,7 +1510,7 @@ Year,Award,Winner,Name,Film
 2008,Actor in a Leading Role,1,Sean Penn,Milk
 2008,Actor in a Supporting Role,1,Heath Ledger,The Dark Knight
 2008,Actress in a Leading Role,1,Kate Winslet,The Reader
-2008,Actress in a Supporting Role,1,Pení©lope Cruz,Vicky Cristina Barcelona
+2008,Actress in a Supporting Role,1,Penï¿½lope Cruz,Vicky Cristina Barcelona
 2008,Actor in a Leading Role,0,Richard Jenkins,The Visitor
 2008,Actor in a Leading Role,0,Frank Langella,Frost/Nixon
 2008,Actor in a Leading Role,0,Brad Pitt,The Curious Case of Benjamin Button
@@ -1543,7 +1543,7 @@ Year,Award,Winner,Name,Film
 2009,Actress in a Leading Role,0,Carey Mulligan,An Education
 2009,Actress in a Leading Role,0,Gabourey Sidibe,Precious: Based on the Novel 'Push' by Sapphire
 2009,Actress in a Leading Role,0,Meryl Streep,Julie & Julia
-2009,Actress in a Supporting Role,0,Pení©lope Cruz,Nine
+2009,Actress in a Supporting Role,0,Penï¿½lope Cruz,Nine
 2009,Actress in a Supporting Role,0,Vera Farmiga,Up in the Air
 2009,Actress in a Supporting Role,0,Maggie Gyllenhaal,Crazy Heart
 2009,Actress in a Supporting Role,0,Anna Kendrick,Up in the Air
@@ -1571,7 +1571,7 @@ Year,Award,Winner,Name,Film
 2011,Actor in a Supporting Role,1,Christopher Plummer,Beginners
 2011,Actress in a Leading Role,1,Meryl Streep,The Iron Lady
 2011,Actress in a Supporting Role,1,Octavia Spencer,The Help
-2011,Actor in a Leading Role,0,Demiíçn Bichir,A Better Life
+2011,Actor in a Leading Role,0,Demiï¿½ï¿½n Bichir,A Better Life
 2011,Actor in a Leading Role,0,George Clooney,The Descendants
 2011,Actor in a Leading Role,0,Gary Oldman,Tinker Tailor Soldier Spy
 2011,Actor in a Leading Role,0,Brad Pitt,Moneyball
@@ -1583,16 +1583,16 @@ Year,Award,Winner,Name,Film
 2011,Actress in a Leading Role,0,Viola Davis,The Help
 2011,Actress in a Leading Role,0,Rooney Mara,The Girl with the Dragon Tattoo
 2011,Actress in a Leading Role,0,Michelle Williams,My Week with Marilyn
-2011,Actress in a Supporting Role,0,Bí©rí©nice Bejo,The Artist
+2011,Actress in a Supporting Role,0,Bï¿½rï¿½nice Bejo,The Artist
 2011,Actress in a Supporting Role,0,Jessica Chastain,The Help
 2011,Actress in a Supporting Role,0,Melissa McCarthy,Bridesmaids
 2011,Actress in a Supporting Role,0,Janet McTeer,Albert Nobbs
 2012,Actor in a Leading Role,1,Daniel Day-Lewis,Lincoln
 2012,Actor in a Supporting Role,1,Christoph Waltz,Django Unchained
 2012,Actress in a Leading Role,1,Jennifer Lawrence,Silver Linings Playbook
-2012,Actress in a Supporting Role,1,Anne Hathaway,Les Misí©rables
+2012,Actress in a Supporting Role,1,Anne Hathaway,Les Misï¿½rables
 2012,Actor in a Leading Role,0,Bradley Cooper,Silver Linings Playbook
-2012,Actor in a Leading Role,0,Hugh Jackman,Les Misí©rables
+2012,Actor in a Leading Role,0,Hugh Jackman,Les Misï¿½rables
 2012,Actor in a Leading Role,0,Joaquin Phoenix,The Master
 2012,Actor in a Leading Role,0,Denzel Washington,Flight
 2012,Actor in a Supporting Role,0,Alan Arkin,Argo
@@ -1601,7 +1601,7 @@ Year,Award,Winner,Name,Film
 2012,Actor in a Supporting Role,0,Tommy Lee Jones,Lincoln
 2012,Actress in a Leading Role,0,Jessica Chastain,Zero Dark Thirty
 2012,Actress in a Leading Role,0,Emmanuelle Riva,Amour
-2012,Actress in a Leading Role,0,Quvenzhaní© Wallis,Beasts of the Southern Wild
+2012,Actress in a Leading Role,0,Quvenzhanï¿½ Wallis,Beasts of the Southern Wild
 2012,Actress in a Leading Role,0,Naomi Watts,The Impossible
 2012,Actress in a Supporting Role,0,Amy Adams,The Master
 2012,Actress in a Supporting Role,0,Sally Field,Lincoln
@@ -1639,7 +1639,7 @@ Year,Award,Winner,Name,Film
 2014,Actor in a Supporting Role,0,Ethan Hawke,Boyhood
 2014,Actor in a Supporting Role,0,Edward Norton,Birdman or (The Unexpected Virtue of Ignorance)
 2014,Actor in a Supporting Role,0,Mark Ruffalo,Foxcatcher
-2014,Actress in a Leading Role,0,Marion Cotillard,"Two Days, One Night"
+2014,Actress in a Leading Role,0,Marion Cotillard,Two Days, One Night
 2014,Actress in a Leading Role,0,Felicity Jones,The Theory of Everything
 2014,Actress in a Leading Role,0,Rosamund Pike,Gone Girl
 2014,Actress in a Leading Role,0,Reese Witherspoon,Wild

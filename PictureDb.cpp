@@ -129,21 +129,8 @@ void addPictureRecord() {
     cout << "Added entry to database: \n" << picture.print() << endl;
 }
 
-void modifyPicture(){
-    //TODO: Once field is found, let them modify if it was the winner or not
-    //we don't need to let them modify or delete every field -
-    //if picture is found modify the rating
-    //else return - movie not found
-
-}
-
-void deleteActorActress(){
-    //TODO: Once field is found, let them delete the entire object
-    //It is already done in searchPicture
-}
-
 void searchPicture(){
- //partial search is done based on the name
+ //complete is done based on the name of the movie
     string picture_search_input;
     cin.ignore();
     cout << "What would you like to search for? Enter the name of the film: ";
@@ -162,7 +149,10 @@ void searchPicture(){
        cin >> modify_or_delete_input;
        switch (modify_or_delete_input) {
                    case 1:
-                            //modifyactoractress();
+                       //TODO: Once field is found, let them modify if it was the winner or not
+                       //we don't need to let them modify or delete every field -
+                       //if picture is found modify the rating
+                       //else return - movie not found
                             break;
                    case 2:
                        if (picture_db.Contains(picture)) {
@@ -171,6 +161,7 @@ void searchPicture(){
                            }
                        else {
                            cerr << "Error! Record not found!\n";
+                           mainMenu(false);
                        }
                        break;
                   case 0 :
@@ -183,6 +174,7 @@ void searchPicture(){
     }
     else {
         cerr << picture << " not found!" << endl;
+        mainMenu(false);
     }
 }
 

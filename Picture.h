@@ -9,9 +9,8 @@ using namespace std;
 
 class Picture {
 public:
-
+    //constructors
     Picture();
-
     Picture(string n, int yr, int nom, double rate, int dur, string gen1, string gen2, string rel, int mc, string syn);
 
     //Picture public variables

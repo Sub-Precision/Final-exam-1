@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 #include "Exceptions.h"
 
@@ -125,6 +126,10 @@ public:
     {
         return _find(x, _root);
     }
+//    void PartialContains(string partial) const
+//    {
+//        _partialContains(partial, _root)
+//    }
 
     /**
      * Test if the tree is logically empty.
@@ -191,6 +196,13 @@ public:
         _remove(x, _root);
     }
 
+    vector<Comparable> getAllNodes()
+    {
+        vector<Comparable> list;
+        return _getAllNodes(list, _root);
+    }
+
+
 
 private:
     struct BinaryNode
@@ -208,6 +220,21 @@ private:
 
     BinaryNode *_root;
 
+
+    vector<Comparable> _getAllNodes(vector<Comparable> list,BinaryNode* t) const//Find fucntion to search for an element
+    {
+        if (t == nullptr)
+            return list;
+        else {
+
+            list.push_back(t->element);
+            list = _getAllNodes(list, t->left);
+            list = _getAllNodes(list, t->right);
+
+        }
+        return list;
+
+    }
 
     /**
      * Internal method to _insert into a subtree.
@@ -254,6 +281,18 @@ private:
         else
             return t->element;   
     }
+//
+//    void _partialSearch(string partial, BinaryNode* t) const//Find fucntion to search for an element
+//    {
+//        if (t == nullptr)
+//            return;
+//        else {
+//            if t.getName
+//            return _find(x, t->left);
+//            return _find(x, t->right);
+//        }
+//
+//    }
 
     /**
      * Internal method to make subtree empty.
