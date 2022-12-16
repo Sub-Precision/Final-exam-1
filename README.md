@@ -14,18 +14,18 @@
 * Picture.cpp - Contains implementation of Picture class
 * PictureDb.h - Contains definition of PictureDb class
 * PictureDb.cpp = Contains implementation of PictureDb class
-* main.h - ************************
-* main.cpp - **************************
+* main.h - 
+* main.cpp - Implements functionality to add and delete records, calls all necessary functions, calls to create objects, calls the sorting algorithms, takes the users input to make a choice, as well as accepts input to run search functions, allows the user to search via actress/actor
 * Makefile - g++ command to compile project
 * actor_actress.csv - File that contains all the information about actors and actresses to be sorted
 * pictures.csv - File that contains all the information about the films to be sorted
 
 # Compilation
 The project can be compiled be issuing the 'make' command on a linux terminal. Upon successful 
-compilation, an executable named 'hw1.exe' will be created in the current directory
+compilation, an executable named 'AHertzCNicholsSWilson.exe' will be created in the current directory
 
 # Running
-Issue './AHertzCNichols.exe' on the command line to run the program
+Issue './AHertzCNicholsSWilson.exe' on the command line to run the program
 
 # Sample Output
 *******************************
