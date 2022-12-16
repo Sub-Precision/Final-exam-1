@@ -26,6 +26,8 @@ Allissa Hertz<br>
 * Partial search functionality
 * Modify functionality
 * Print to csv functionality
+<br>
+You can also check out our github for a full commit history: https://github.com/simplyallissa/Final-exam
 
 # Project Files
 * ActorActress.h - Contains definition of ActorActress class
