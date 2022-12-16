@@ -26,8 +26,8 @@ Allissa Hertz<br>
 * Partial search functionality
 * Modify functionality
 * Print to csv functionality
-<br>
-You can also check out our github for a full commit history: https://github.com/simplyallissa/Final-exam
+
+You can also check out our Github for a full commit history: https://github.com/simplyallissa/Final-exam
 
 # Project Files
 * ActorActress.h - Contains definition of ActorActress class
@@ -56,7 +56,7 @@ Issue './AHertzCNicholsSWilson.exe' on the command line to run the program
 # Sample Output
 
 **Menu 1: Choose your database**
-<br>
+<br><br>
 Please choose the database you would like to view:
 1. Actor/Actress 
 2. Movie
@@ -100,7 +100,7 @@ Added entry to database:
 **Actor/Actress - Sort records alphabetically by name**
 
 [Prints a sorted list of all actor/actress objects]
-<br>
+<br><br>
 Name : Abigail Breslin<br>
 Film : Little Miss Sunshine<br>
 Year: 2006<br>
@@ -125,15 +125,17 @@ ect..
 
 You selected option: 3<br>
 What would you like to search for?<br>
-Enter the name of the Actor/Actress. This can be a first or last name: <br>
-User input:  Emil<br>
+Enter the name of the Actor/Actress. This can be a first or last name: <br><br>
+User input:  Emil<br><br>
+
 0:<br>
 Name : Emil Jannings<br>
 Film : The Last Command<br>
 Year: 1928<br>
 Award : Actor in a Leading Role<br>
 Winner : 1<br>
--------------------------------------------------------<br>
+-
+<br>
 
 1:<br>
 Name : Emily Watson<br>
