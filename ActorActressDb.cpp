@@ -190,5 +190,6 @@ void saveCSVActorActress() {
     for (auto& actoractress : actor_actress_db.getAllNodes())
         outfile << actoractress.name << "," << actoractress.film << "," << actoractress.year << "," << actoractress.award << "," << actoractress.winner << endl;
     outfile.close();
+    cout << "Your file has been saved as a csv to the current directory." << endl;
 
 }

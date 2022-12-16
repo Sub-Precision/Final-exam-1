@@ -352,7 +352,7 @@ private:
         {
             BinaryNode *oldNode = t;
             t = ( t->left != nullptr ) ? t->left : t->right;
-            cout << "found match: \n" << t->element << endl;
+            cout << "The entry has been removed." << endl;
             delete oldNode;
         }
     }
