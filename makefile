@@ -1,7 +1,7 @@
 .SUFFIXES : .cpp
 
 #Compile with g++
-CC = g++
+CC = g++ -std=c++17
 
 #use -g for gnu debugger and -std= for c++11 compiling
 CXXFLAGS = -g -std=c++11
