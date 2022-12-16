@@ -202,7 +202,10 @@ public:
         return _getAllNodes(list, _root);
     }
 
-
+    void Modify(const Comparable & x, const Comparable & y )
+    {
+        _modify(x, y, _root);
+    }
 
 private:
     struct BinaryNode
@@ -349,7 +352,22 @@ private:
         {
             BinaryNode *oldNode = t;
             t = ( t->left != nullptr ) ? t->left : t->right;
+            cout << "found match: \n" << t->element << endl;
             delete oldNode;
+        }
+    }
+
+
+    void _modify(const Comparable & x, const Comparable & y, BinaryNode * & t )
+    {
+        if( t == nullptr )
+            return;   // Item not found; do nothing
+        if( x < t->element )
+            _modify(x, y, t->left);
+        else if( t->element < x )
+            _modify(x, y,t->right);
+        else{
+            t->element = y;
         }
     }
 

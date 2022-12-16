@@ -111,59 +111,61 @@ void searchActorActress(){
     getline(cin, actoractress_search_name);
 
     vector<ActorActress> allNodes = actor_actress_db.getAllNodes();
+    vector<ActorActress> foundNodes;
+    int i = 0;
     for(ActorActress AA : allNodes)
     {
         if (AA.getName().find(actoractress_search_name) != std::string::npos)
         {
+            int modify_or_delete_input;
+            cout <<  i << ":" << endl;
+            i++;
             cout << AA << endl;
+            foundNodes.push_back(AA);
         }
 
     }
 
-//    auto name = ActorActress(actoractress_search_name);
-//    cout << "The name:" << endl;
-//    //Pull all the actoractress names
-//
-//    //create a new vector
-//    //read each actoractress name and see if it contains the string
-//    //if it does, print it
-//
-//    if (actor_actress_db.Contains(name)){
-//        auto _record = actor_actress_db.Find(name);
-//        int modify_or_delete_input;
-//        cout << "-----------Match found! Here is the record-----------" << endl;//For now partial serahc is implemented but complete search is needed
-//        cout << _record;
-//        cout << "What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry" << endl;
-//        cin >> modify_or_delete_input;
-//        switch (modify_or_delete_input) {
-//        case 1:
-//            //TODO: Once field is found, let them modify if it was the winner or not
-//            //we don't need to let them modify or delete every field -
-//            //if actoractress is found modify the winner
-//            //else return - movie not found
-//            break;
-//        case 2:
-//            if (actor_actress_db.Contains(name)) {
-//                actor_actress_db.Remove(name);
-//                cout << "-----------Record is deleted from the database!-----------" << endl;
-//            }
-//            else {
-//                cerr << "Error! Record not found!\n";
-//                mainMenu(true);
-//            }
-//            break;
-//        case 0:
-//            // type 0 at the main menu to
-//            exit(0);
-//            break;
-//        default:
-//            cout << "Invalid input. you must enter a number 1-2 to select the corresponding menu option." << endl;
-//        }
-//    }
-//    else {
-//        cerr << name << " Record not found!" << endl;
-//        mainMenu(true);
-//    }
+    if(foundNodes.size() > 0) {
+        cout << "Would you like to\n1. Modify\n2. Delete \n3. Continue" << endl;
+        string input;
+        cin >> input;
+
+        if (input == "1") {
+            cout << "Which record would you like to modify?";
+            cin >> input;
+            int index = std::stoi(input);
+            try {
+                cout << "What would you like to modify this record to?: \n" << foundNodes[index].getName()
+                     << endl;
+                cin.ignore();
+                getline(cin, input);
+
+                ActorActress mod = foundNodes[index];
+                mod.setName(input);
+                actor_actress_db.Modify(foundNodes[index],mod);
+            }
+            catch (int e) {
+                cout << "invalid option" << endl;
+            }
+        }
+        else if(input == "2")
+        {
+            cout << "Which record would you like to Delete?";
+            cin >> input;
+            int index = std::stoi(input);
+
+            try {
+                actor_actress_db.Remove(foundNodes[index]);
+            }
+            catch(int e)
+            {
+                cout << "invalid input" << endl;
+            }
+        }
+    }
+    //the tree needs to be resorted after a modification or else the binary tree functions break down
+    return;
 }
 
 void sortActorActress(){

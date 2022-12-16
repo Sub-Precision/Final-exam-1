@@ -26,12 +26,13 @@ int main() {
 
 // They have selected which database they want, and now they select what they want to do
 void mainMenu(bool isActorDatabase) {
-    int main_menu_selection;
     while (true) {
+        int main_menu_selection;
         //ask what they want to do. Have them enter 1-4. Or 0 to cancel.
         cout<< "What would you like to do? Enter a number 1-4 to select one of the options below. \n\nYou can:\n\n1. Add a new record\n2. Sort records alphabetically by a certain field\n3. Search for an entry by a name. This also allows you to modify or delete a particular picture or actor/actress.\n4. Print a CSV file of the latest database.\n0. Quit\n";
         //read in their selection
         cin >> main_menu_selection;
+        cout << "you selected option: " << main_menu_selection << endl;
         //run different operations for ActorActress database or picture database based on their selection.
         switch (main_menu_selection) {
             case 1 :
@@ -81,6 +82,7 @@ void mainMenu(bool isActorDatabase) {
             default :
                 cout << "Invalid input. You must enter a number 1-4 to select the corresponding menu option." << endl;
         }
+        cin.clear();
     }
 }
 // utility function that takes a string and a delimiter (For example a comma, space, or end of line)
