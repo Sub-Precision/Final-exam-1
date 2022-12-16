@@ -144,6 +144,8 @@ void searchActorActress(){
                     ActorActress mod = foundNodes[index];
                     mod.setWinner(!mod.getWinner());
                     actor_actress_db.Modify(foundNodes[index],mod);
+                    cout << "Record modified!" << endl;
+                    cout << mod;
                 }
 
             }
