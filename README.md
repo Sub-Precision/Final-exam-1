@@ -150,11 +150,12 @@ Would you like to<br>
 2. Delete <br>
 3. Continue<br>
 <br>
-**Modify**<br>
+**Modify**
+<br>
 Which record would you like to modify?<br>
 Enter a the number that corresponds with the record you want to modify.<br>
 User input: 0<br>
-Would you like to modify this records win?:<br>
+Would you like to modify this record's win?:<br>
 1. Yes<br>
 2.No<br>
 User input: Yes.<br><br>
@@ -262,13 +263,13 @@ Genre2 : bob<br>
 Release : 89<br>
 Metacritic : 89<br>
 Synopsis : bob<br>
--------------------------------------------------------<br><br>
+-------------------------------------------------------<br>
 
 Would you like to<br>
 1. Modify<br>
 2. Delete <br>
 3. Continue<br>
-
+<br>
 **Modify**
 
 What would you like to modify this rating to? Please enter a two-digit double from 1 to 10. For example, 1.2, 9.7, ect..
