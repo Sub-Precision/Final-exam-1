@@ -1,7 +1,7 @@
 # CSCI 2421 - 001 
 * Final Programming Assignment 
 * Cade Nichols, Allissa Hertz, Susmitha Wilson
-* Cade.nichols@UCDenver.edu, susmitha.wilson@ucdenver.edu
+* Cade.nichols@UCDenver.edu, allissa.hertz@ucdenver.edu, susmitha.wilson@ucdenver.edu
 
 # What everyone did
 Cade Nichols<br>
@@ -20,6 +20,7 @@ Susmitha Wilson<br>
 * Testing program
 
 Allissa Hertz<br>
+* Functionality for injesting the file
 * Design Doc
 * Main.h/Main.cpp
 * Add entry functionality
