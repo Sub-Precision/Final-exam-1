@@ -134,8 +134,7 @@ Film : The Last Command<br>
 Year: 1928<br>
 Award : Actor in a Leading Role<br>
 Winner : 1<br>
--
-<br>
+<br>-------------------------------------------------------<br>
 
 1:<br>
 Name : Emily Watson<br>
@@ -143,7 +142,7 @@ Film : Breaking the Waves<br>
 Year: 1996<br>
 Award : Actress in a Leading Role<br>
 Winner : 0<br>
--------------------------------------------------------
+<br>-------------------------------------------------------<br>
 <br>
 Would you like to<br>
 1. Modify<br>
