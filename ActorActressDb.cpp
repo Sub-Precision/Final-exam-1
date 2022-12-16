@@ -106,7 +106,7 @@ void searchActorActress(){
     string actoractress_search_name;
 
     cout << "What would you like to search for?" << endl;
-    cout<<"Enter the name of the Actor/Actress: ";
+    cout<<"Enter the name of the Actor/Actress. This can be a first or last name: ";
     cin.ignore();
     getline(cin, actoractress_search_name);
 
