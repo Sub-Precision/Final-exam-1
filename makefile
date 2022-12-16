@@ -10,7 +10,7 @@ CXXFLAGS = -g -std=c++11
 OBJS = ActorActress.o ActorActressDb.o Picture.o PictureDb.o main.o
 
 ######Change from hw1 to whatever TARGET name you want for the executable.###
-TARGET = AHertzCNichols
+TARGET = AHertzCNicholsSWilson
 
 ######Do NOT change the following 5 lines...Tabs Matter!#########
 $(TARGET): $(OBJS)
@@ -28,4 +28,4 @@ clean:
 #Create the zip file. Please change the name of the zip file
 # and list the files you would like to add to it.
 zipIt:
-	zip -r AHertzCNichols.zip ActorActress.cpp ActorActressDb.cpp Picture.cpp PictureDb.cpp main.cpp ActorActress.h ActorActress.h BST.h Exceptions.h Picture.h PictureDb.h main.h README.txt makefile actor_actress.csv pictures.csv
+	zip -r AHertzCNicholsSWilson.zip ActorActress.cpp ActorActressDb.cpp Picture.cpp PictureDb.cpp main.cpp ActorActress.h ActorActressDb.h BST.h Exceptions.h Picture.h PictureDb.h main.h README.txt makefile actor_actress.csv pictures.csv
