@@ -132,18 +132,20 @@ void searchActorActress(){
         cin >> input;
 
         if (input == "1") {
-            cout << "Which record would you like to modify?";
+            cout << "Which record would you like to modify?\nEnter a the number that corresponds with the record you want to modify.";
             cin >> input;
             int index = std::stoi(input);
             try {
-                cout << "What would you like to modify this record to?: \n" << foundNodes[index].getName()
+                cout << "Would you like to modify this records win?:\n1. Yes\n2.No"
                      << endl;
                 cin.ignore();
                 getline(cin, input);
+                if(input == "1"){
+                    ActorActress mod = foundNodes[index];
+                    mod.setWinner(!mod.getWinner());
+                    actor_actress_db.Modify(foundNodes[index],mod);
+                }
 
-                ActorActress mod = foundNodes[index];
-                mod.setName(input);
-                actor_actress_db.Modify(foundNodes[index],mod);
             }
             catch (int e) {
                 cout << "invalid option" << endl;
