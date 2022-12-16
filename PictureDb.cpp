@@ -163,15 +163,14 @@ void searchPicture(){
             cin >> input;
             int index = std::stoi(input);
             try {
-                cout << "Would you like to modify this records win?:\n1. Yes\n2.No"
+                cout << "What would you like to modify this rating to? Please enter a two-digit double from 1 to 10. For example, 1.2, 9.7, ect.."
                      << endl;
                 cin.ignore();
                 getline(cin, input);
-                if(input == "1"){
+
                     Picture mod = foundNodes[index];
-                    mod.setRating(mod.getRating());
+                    mod.setRating(std::stod(input));
                     picture_db.Modify(foundNodes[index],mod);
-                }
 
             }
             catch (int e) {
