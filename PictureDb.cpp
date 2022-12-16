@@ -171,6 +171,8 @@ void searchPicture(){
                     Picture mod = foundNodes[index];
                     mod.setRating(std::stod(input));
                     picture_db.Modify(foundNodes[index],mod);
+                    cout << "Record modified!" << endl;
+                    cout << mod;
 
             }
             catch (int e) {
