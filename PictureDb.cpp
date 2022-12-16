@@ -210,7 +210,7 @@ void saveCSVPicture() {
     ofstream outfile(user_file_name);
     //the first line headings have to be print out separately because they are ignored when creating the BST
     outfile << "Name,Year,Nominations,Rating,Duration,Genre1,Genre2,Release,Metacritic,Synopsis" << endl;;
-    for (auto& picture : picture_vector_for_file_input)
+    for (auto& picture : picture_db.getAllNodes())
         outfile << picture.name << "," << picture.year << "," << picture.nominations << "," << picture.rating << "," << picture.duration<<","<< picture.genre1<<","<< picture.genre2<<","<< picture.release<<","<< picture.metacritic<<","<< picture.synopsis<< endl;
 
 
