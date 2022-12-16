@@ -130,52 +130,71 @@ void addPictureRecord() {
 }
 
 void searchPicture(){
- //complete is done based on the name of the movie
-    string picture_search_input;
-    cin.ignore();
-    cout << "What would you like to search for? Enter the name of the film: ";
-    getline(cin, picture_search_input);
-    //cin >> picture_search_input;
+    string picture_search_name;
 
-    //Find function is added to the BST.h file -> "picture_db.Find()"
-    //need to pass what we found to modify and delete functions
-    auto picture = Picture(picture_search_input);
-    if (picture_db.Contains(picture)) {
-       auto movie = picture_db.Find(picture);
-       int modify_or_delete_input;
-       cout << "-----------Match found! Here is the record-----------" << endl;
-       cout << movie;
-       cout << "What would you like to do? 1. Modify whether the actor or actress won 2. Delete the entry "<<endl;
-       cin >> modify_or_delete_input;
-       switch (modify_or_delete_input) {
-                   case 1:
-                       //TODO: Once field is found, let them modify if it was the winner or not
-                       //we don't need to let them modify or delete every field -
-                       //if picture is found modify the rating
-                       //else return - movie not found
-                            break;
-                   case 2:
-                       if (picture_db.Contains(picture)) {
-                           picture_db.Remove(picture);
-                           cout << "-----------Movie is deleted from the database!-----------"<<endl;
-                           }
-                       else {
-                           cerr << "Error! Record not found!\n";
-                           mainMenu(false);
-                       }
-                       break;
-                  case 0 :
-                       // type 0 at the main menu to
-                       exit(0);
-                      break;
-                   default :
-                      cout << "invalid input. you must enter a number 1-2 to select the corresponding menu option." << endl;
-              }
+    cout << "What would you like to search for?" << endl;
+    cout<<"Enter the name of the Movie. This must be an exact match: ";
+    cin.ignore();
+    getline(cin, picture_search_name);
+
+    vector<Picture> allNodes = picture_db.getAllNodes();
+    vector<Picture> foundNodes;
+    int i = 0;
+    for(Picture Pic : allNodes)
+    {
+        if (Pic.getName() == picture_search_name)
+        {
+            int modify_or_delete_input;
+            cout <<  i << ":" << endl;
+            i++;
+            cout << Pic << endl;
+            foundNodes.push_back(Pic);
+        }
+
     }
-    else {
-        cerr << picture << " not found!" << endl;
-        mainMenu(false);
+
+    if(foundNodes.size() > 0) {
+        cout << "Would you like to\n1. Modify\n2. Delete \n3. Continue" << endl;
+        string input;
+        cin >> input;
+
+        if (input == "1") {
+            cout << "Which record would you like to modify?\nEnter a the number that corresponds with the record you want to modify.";
+            cin >> input;
+            int index = std::stoi(input);
+            try {
+                cout << "Would you like to modify this records win?:\n1. Yes\n2.No"
+                     << endl;
+                cin.ignore();
+                getline(cin, input);
+                if(input == "1"){
+                    Picture mod = foundNodes[index];
+                    mod.setRating(mod.getRating());
+                    picture_db.Modify(foundNodes[index],mod);
+                }
+
+            }
+            catch (int e) {
+                cout << "invalid option" << endl;
+            }
+        }
+        else if(input == "2")
+        {
+            cout << "Which record would you like to Delete?";
+            cin >> input;
+            int index = std::stoi(input);
+
+            try {
+                picture_db.Remove(foundNodes[index]);
+            }
+            catch(int e)
+            {
+                cout << "invalid input" << endl;
+            }
+        }
     }
+    //the tree needs to be resorted after a modification or else the binary tree functions break down
+    return;
 }
 
 void sortPicture() {
