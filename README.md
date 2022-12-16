@@ -3,6 +3,30 @@
 * Cade Nichols, Allissa Hertz, Susmitha Wilson
 * Cade.nichols@UCDenver.edu, susmitha.wilson@ucdenver.edu
 
+# What everyone did
+Cade Nichols<br>
+* Readme.md
+* ActorActress.h
+* ActorActress.cpp
+* Picture.h
+* Picture.cpp
+* Makefile
+* Testing on server
+
+Susmitha Wilson<br>
+* Sort funtionality
+* Complete search functionality
+* Delete functionality
+* Testing program
+
+Allissa Hertz<br>
+* Design Doc
+* Main.h/Main.cpp
+* Add entry functionality
+* Partial search functionality
+* Modify functionality
+* Print to csv functionality
+
 # Project Files
 * ActorActress.h - Contains definition of ActorActress class
 * ActorActress.cpp - Contains implementation of ActorActress class
