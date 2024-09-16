@@ -144,6 +144,8 @@ void searchActorActress(){
                     ActorActress mod = foundNodes[index];
                     mod.setWinner(!mod.getWinner());
                     actor_actress_db.Modify(foundNodes[index],mod);
+                    cout << "Record modified!" << endl;
+                    cout << mod;
                 }
 
             }
@@ -185,8 +187,9 @@ void saveCSVActorActress() {
     ofstream outfile(user_file_name);
      //the first line headings have to be print out separately because they are ignored when creating the BST
     outfile << "Name,Film,Year,Award,Winner" << endl;;
-    for (auto& actoractress : actor_actress_vector_for_file_input)
+    for (auto& actoractress : actor_actress_db.getAllNodes())
         outfile << actoractress.name << "," << actoractress.film << "," << actoractress.year << "," << actoractress.award << "," << actoractress.winner << endl;
     outfile.close();
+    cout << "Your file has been saved as a csv to the current directory." << endl;
 
 }

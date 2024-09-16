@@ -159,32 +159,21 @@ void searchPicture(){
         cin >> input;
 
         if (input == "1") {
-            cout << "Which record would you like to modify?\nEnter a the number that corresponds with the record you want to modify.";
-            cin >> input;
-            int index = std::stoi(input);
-            try {
                 cout << "What would you like to modify this rating to? Please enter a two-digit double from 1 to 10. For example, 1.2, 9.7, ect.."
                      << endl;
                 cin.ignore();
                 getline(cin, input);
 
-                    Picture mod = foundNodes[index];
+                    Picture mod = foundNodes[0];
                     mod.setRating(std::stod(input));
-                    picture_db.Modify(foundNodes[index],mod);
-
-            }
-            catch (int e) {
-                cout << "invalid option" << endl;
-            }
+                    picture_db.Modify(foundNodes[0],mod);
+                    cout << "Record modified!" << endl;
+                    cout << mod;
         }
         else if(input == "2")
         {
-            cout << "Which record would you like to Delete?";
-            cin >> input;
-            int index = std::stoi(input);
-
             try {
-                picture_db.Remove(foundNodes[index]);
+                picture_db.Remove(foundNodes[0]);
             }
             catch(int e)
             {
@@ -210,9 +199,9 @@ void saveCSVPicture() {
     ofstream outfile(user_file_name);
     //the first line headings have to be print out separately because they are ignored when creating the BST
     outfile << "Name,Year,Nominations,Rating,Duration,Genre1,Genre2,Release,Metacritic,Synopsis" << endl;;
-    for (auto& picture : picture_vector_for_file_input)
+    for (auto& picture : picture_db.getAllNodes())
         outfile << picture.name << "," << picture.year << "," << picture.nominations << "," << picture.rating << "," << picture.duration<<","<< picture.genre1<<","<< picture.genre2<<","<< picture.release<<","<< picture.metacritic<<","<< picture.synopsis<< endl;
-
+    cout << "Your file has been saved as a csv to the current directory." << endl;
 
     outfile.close();
 }
